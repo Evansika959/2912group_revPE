@@ -29,12 +29,12 @@ library (fa16b_rev_dummy) {
         dont_use           : false;
         dont_touch         : true;
 
-        pg_pin (vdd) {
+        pg_pin (VDD) {
             pg_type      : primary_power;
             voltage_name : "VDD";
         }
 
-        pg_pin (vss) {
+        pg_pin (VSS) {
             pg_type      : primary_ground;
             voltage_name : "VSS";
         }

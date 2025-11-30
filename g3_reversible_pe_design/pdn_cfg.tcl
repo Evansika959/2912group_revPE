@@ -210,7 +210,7 @@ add_pdn_connect \
     -grid fa_pg \
     -layers "Metal4 Metal3"
 
-add_pdn_stripe -grid fa_pg -layer Metal4 -width 2.36 -offset 1.18 -spacing 0.28 -pitch 400 -starts_with GROUND -number_of_straps 2
+add_pdn_stripe -grid fa_pg -layer Metal4 -width 2.36 -offset 50 -spacing 0.28 -pitch 400 -starts_with GROUND -number_of_straps 2
 
 
 # define_pdn_grid \
