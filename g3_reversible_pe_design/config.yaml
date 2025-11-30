@@ -6,11 +6,16 @@ VERILOG_FILES:
 CLOCK_PORT: clk
 CLOCK_PERIOD: 25
 
+VDD_NETS:
+  - vdd
+GND_NETS:
+  - vss
+
 PRIMARY_GDSII_STREAMOUT_TOOL: klayout
 
 "PDN_MACRO_CONNECTIONS": 
 - "u_fa16b_rev vdd vss vdd vss"
-"VERILOG_POWER_DEFINE": USE_POWER_PINS
+# "VERILOG_POWER_DEFINE": USE_POWER_PINS
 "ERROR_ON_PDN_VIOLATIONS": false
 
 IGNORE_DISCONNECTED_MODULES: 
@@ -51,15 +56,16 @@ MACROS:
         - dir::../custom_ip/fa16b_rev/fa16b_rev.lib
     instances:
       u_fa16b_rev:
-        location: [20, 20]
+        location: [125, 70]
         orientation: N
 
 # Pin metal layer
 FP_IO_HLAYER: "Metal3"
-FP_IO_VLAYER: "Metal4"
-FP_IO_HEXTEND: 2.0
+FP_IO_VLAYER: "Metal2"
+FP_IO_HEXTEND: 0
+FP_IO_VEXTEND: 0
 
 # Area
 FP_SIZING: absolute
-DIE_AREA: [0, 0, 400, 400]
-CORE_AREA: [0, 0, 400, 400]
+DIE_AREA: [0, 0, 420, 520]
+CORE_AREA: [20, 20, 400, 500]
