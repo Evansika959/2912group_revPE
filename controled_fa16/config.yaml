@@ -1,6 +1,7 @@
-DESIGN_NAME: fa16_rev_wrapped
+DESIGN_NAME: fa16_rev_ctrl
 
 VERILOG_FILES:
+  - dir::fa16_rev_control.sv
   - dir::fa16_rev_wrapped.sv
 
 CLOCK_PORT: clk
@@ -14,15 +15,15 @@ GND_NETS:
 PRIMARY_GDSII_STREAMOUT_TOOL: klayout
 
 PDN_MACRO_CONNECTIONS: 
-- "u_fa16b_rev VDD VSS VDD VSS"
-# "VERILOG_POWER_DEFINE": USE_POWER_PINS
+- "u_rev.u_fa16b_rev VDD VSS VDD VSS"
+VERILOG_POWER_DEFINE: USE_POWER_PINS
 # ERROR_ON_PDN_VIOLATIONS: false
 
 # PDN_VERTICAL_LAYERS: Metal4
 # PDN_HORIZONTAL_LAYERS: Metal5
 
-IGNORE_DISCONNECTED_MODULES: 
-- u_fa16b_rev
+# IGNORE_DISCONNECTED_MODULES: 
+# - u_fa16b_rev
 
 PNR_SDC_FILE: dir::constraints.sdc
 
@@ -58,7 +59,7 @@ MACROS:
       "*_tt_025C_3v30":
         - dir::../custom_ip/fa16b_rev/fa16b_rev.lib
     instances:
-      u_fa16b_rev:
+      u_rev.u_fa16b_rev:
         location: [125, 70]
         orientation: N
 
@@ -73,6 +74,6 @@ FP_SIZING: absolute
 DIE_AREA: [0, 0, 420, 520]
 CORE_AREA: [20, 20, 400, 500]
 
-DRT_OPT_ITERS: 10
+DRT_OPT_ITERS: 20
 
 PDN_CFG: dir::pdn_cfg.tcl
