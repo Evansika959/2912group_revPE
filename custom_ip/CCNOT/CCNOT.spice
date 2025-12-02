@@ -1,0 +1,20 @@
+** sch_path: /foss/designs/final_project/standard_cells/CCNOT/CCNOT.sch
+.subckt CCNOT vdd vss b_not a_not b a r r_not q_not p_not q p c_not c
+*.PININFO vdd:B vss:B b_not:B a_not:B b:B a:B r:B r_not:B q_not:B p_not:B q:B p:B c_not:B c:B
+M1 c_not a_not net2 vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M2 net2 b_not r vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M3 c_not b net1 vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M4 net1 a r vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M5 r b_not c vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M6 r a_not c vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M7 r b c vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M8 r a c vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M9 c a_not net4 vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M10 net4 b_not r_not vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M11 c b net3 vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M12 net3 a r_not vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M13 r_not b_not c_not vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M14 r_not a_not c_not vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M15 r_not b c_not vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M16 r_not a c_not vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+.ends

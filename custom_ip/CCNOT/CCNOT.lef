@@ -1,0 +1,147 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO CCNOT
+  CLASS BLOCK ;
+  FOREIGN CCNOT ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 39.830 BY 23.075 ;
+  PIN a
+    ANTENNAGATEAREA 0.470400 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 6.450 16.920 12.005 17.205 ;
+    END
+  END a
+  PIN c_not
+    ANTENNADIFFAREA 1.587600 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 6.450 12.385 8.295 12.760 ;
+    END
+  END c_not
+  PIN VDD
+    USE POWER ;
+    PORT
+      LAYER Metal1 ;
+        RECT 20.070 18.190 24.390 19.090 ;
+    END
+  END VDD
+  PIN VSS
+    USE GROUND ;
+    PORT
+      LAYER Metal1 ;
+        RECT 12.955 3.165 33.105 4.065 ;
+    END
+  END VSS
+  PIN c
+    ANTENNADIFFAREA 1.587600 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 6.450 11.030 18.795 11.420 ;
+    END
+  END c
+  PIN b
+    ANTENNAGATEAREA 0.470400 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 7.135 10.350 7.145 10.360 ;
+    END
+  END b
+  PIN b_not
+    ANTENNAGATEAREA 0.470400 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 6.450 9.415 11.970 9.685 ;
+    END
+  END b_not
+  PIN a_not
+    ANTENNAGATEAREA 0.470400 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 6.450 4.660 10.255 5.010 ;
+    END
+  END a_not
+  PIN r_not
+    ANTENNADIFFAREA 1.587600 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 11.280 11.795 33.105 12.135 ;
+    END
+  END r_not
+  PIN r
+    ANTENNADIFFAREA 1.587600 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 30.065 8.850 33.105 9.185 ;
+    END
+  END r
+  PIN p
+    ANTENNAGATEAREA 0.470400 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 29.055 16.920 33.105 17.205 ;
+    END
+  END p
+  PIN p_not
+    ANTENNAGATEAREA 0.470400 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 30.760 4.660 33.105 5.010 ;
+    END
+  END p_not
+  PIN q_not
+    ANTENNAGATEAREA 0.470400 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 29.060 9.415 33.105 9.685 ;
+    END
+  END q_not
+  PIN q
+    ANTENNAGATEAREA 0.470400 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 31.420 10.355 33.105 10.665 ;
+    END
+  END q
+  OBS
+      LAYER Nwell ;
+        RECT 6.450 10.865 33.105 19.090 ;
+      LAYER Pwell ;
+        RECT 6.450 3.165 33.105 10.865 ;
+      LAYER Metal1 ;
+        RECT 6.450 17.890 19.770 19.090 ;
+        RECT 24.690 17.890 33.105 19.090 ;
+        RECT 6.450 17.505 33.105 17.890 ;
+        RECT 12.305 16.620 28.755 17.505 ;
+        RECT 6.450 13.060 33.105 16.620 ;
+        RECT 8.595 12.435 33.105 13.060 ;
+        RECT 8.595 12.085 10.980 12.435 ;
+        RECT 6.450 11.720 10.980 12.085 ;
+        RECT 19.095 10.965 33.105 11.495 ;
+        RECT 19.095 10.730 31.120 10.965 ;
+        RECT 6.450 10.665 31.120 10.730 ;
+        RECT 6.450 10.645 31.420 10.665 ;
+        RECT 6.450 10.375 31.120 10.645 ;
+        RECT 6.450 10.360 31.420 10.375 ;
+        RECT 6.450 10.355 7.135 10.360 ;
+        RECT 6.450 10.050 6.835 10.355 ;
+        RECT 7.445 10.055 31.120 10.360 ;
+        RECT 7.445 10.050 33.105 10.055 ;
+        RECT 6.450 9.985 33.105 10.050 ;
+        RECT 12.270 9.115 28.760 9.985 ;
+        RECT 6.450 8.550 29.765 9.115 ;
+        RECT 6.450 5.310 33.105 8.550 ;
+        RECT 10.555 4.365 30.460 5.310 ;
+        RECT 10.555 4.360 12.655 4.365 ;
+        RECT 6.450 4.065 12.655 4.360 ;
+        RECT 6.450 4.015 12.955 4.065 ;
+        RECT 6.450 3.755 12.695 4.015 ;
+        RECT 6.450 3.165 12.955 3.755 ;
+      LAYER Metal2 ;
+        RECT 8.250 3.630 32.605 18.875 ;
+  END
+END CCNOT
+END LIBRARY
+
