@@ -1,0 +1,722 @@
+library (fa16b_rev_dummy) {
+    delay_model                 : table_lookup;
+    time_unit                   : "1ns";
+    voltage_unit                : "1V";
+    current_unit                : "1mA";
+    pulling_resistance_unit     : "1kohm";
+    leakage_power_unit          : "1nW";
+    capacitive_load_unit (1, pf);
+
+    input_threshold_pct_rise        : 50.0;
+    output_threshold_pct_rise       : 50.0;
+    slew_lower_threshold_pct_rise   : 10.0;
+    slew_upper_threshold_pct_rise   : 90.0;
+    input_threshold_pct_fall        : 50.0;
+    output_threshold_pct_fall       : 50.0;
+    slew_lower_threshold_pct_fall   : 10.0;
+    slew_upper_threshold_pct_fall   : 90.0;
+
+    operating_conditions (typ) {
+        process     : 1.0;
+        temperature : 25.0;
+        voltage     : 1.8;
+    }
+    default_operating_conditions : typ;
+
+    cell (fa16b_rev) {
+        area               : 10.0;
+        cell_leakage_power : 0.0;
+        dont_use           : false;
+        dont_touch         : true;
+
+        pg_pin (VDD) {
+            pg_type      : primary_power;
+            voltage_name : "VDD";
+        }
+
+        pg_pin (VSS) {
+            pg_type      : primary_ground;
+            voltage_name : "VSS";
+        }
+
+        pin (z) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (z_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (c0_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (c0_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (c15_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (c15) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s5_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s5) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s0_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s0) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s6_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s6) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s1_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s1) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s7_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s7) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s2_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s2) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s8_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s8) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s3_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s3) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s9_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s9) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s4_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s4) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s10_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s10) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s11_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s11) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s12_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s12) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s13_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s13) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s14_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s14) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s15_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (s15) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (c0_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (c0_f_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a0_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a0_not_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b0) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b0_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a1_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a1_not_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b1) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b1_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a2_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a2_not_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b2) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b2_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a3_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a3_not_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b3) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b3_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a4_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a4_not_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b4) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b4_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a5_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a5_not_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b5) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b5_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a6_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a6_not_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b6) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b6_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a7_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a7_not_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b7) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b7_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a8_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a8_not_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b8) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b8_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a9_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a9_not_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b9) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b9_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a10_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a10_not_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b10) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b10_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a11_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a11_not_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b11) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b11_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a12_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a12_not_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b12) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b12_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a13_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a13_not_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b13) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b13_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a14_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a14_not_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b14) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b14_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a15_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a15_not_f) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b15) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (b15_not) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a0_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a0_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a1_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a1_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a2_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a2_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a3_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a3_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a4_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a4_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a5_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a5_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a6_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a6_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a7_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a7_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a8_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a8_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a9_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a9_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a10_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a10_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a11_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a11_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a12_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a12_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a13_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a13_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a14_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a14_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a15_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+
+        pin (a15_not_b) {
+            direction   : inout;
+            capacitance : 0.001;
+        }
+    }
+}
