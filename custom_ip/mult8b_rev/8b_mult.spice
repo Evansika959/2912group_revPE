@@ -1,0 +1,375 @@
+** sch_path: /foss/designs/final_project/devices/8b_mult/8b_mult.sch
+.subckt 8b_mult vss vdd a0_not a0 a1_not a1 a2_not a2 a3_not a3 a4_not a4 a5_not a5 a6_not a6 a7_not a7 b0_not b0 b1_not b1 p0
++ p0_not p1 p1_not b0_r1_b b0_r1_b_not b0_q0 b0_q0_not b0_p0 b0_p0_not b0_q1 b0_q1_not b0_p1 b0_p1_not b0_q2 b0_q2_not b0_p2 b0_p2_not
++ b0_q3 b0_q3_not b0_p3 b0_p3_not b0_q4 b0_q4_not b0_p4 b0_p4_not b0_q5 b0_q5_not b0_p5 b0_p5_not b0_q6 b0_q6_not b0_p6 b0_p6_not b0_q7
++ b0_q7_not b0_p7 b0_p7_not b1_q7 b1_q7_not b1_p7 b1_p7_not b1_q6 b1_q6_not b1_p6 b1_p6_not b1_q5 b1_q5_not b1_p5 b1_p5_not b1_q4 b1_q4_not
++ b1_p4 b1_p4_not b1_q3 b1_q3_not b1_p3 b1_p3_not b1_q2 b1_q2_not b1_p2 b1_p2_not b1_q1 b1_q1_not b1_p1 b1_p1_not b1_q0 b1_q0_not b1_p0
++ b1_p0_not b1_c0 b1_c0_not b1_c1 b1_c1_not b1_c2 b1_c2_not b1_c3 b1_c3_not b1_c4 b1_c4_not b1_c5 b1_c5_not b1_c6 b1_c6_not b1_c7 b1_c7_not
++ b0_c7 b0_c7_not b0_c6 b0_c6_not b0_c5 b0_c5_not b0_c4 b0_c4_not b0_c3 b0_c3_not b0_c2 b0_c2_not b0_c1 b0_c1_not b0_c0 b0_c0_not b2_c0
++ b2_c0_not b2_q0 b2_q0_not b2_p0 b2_p0_not b2_q1 b2_q1_not b2_p1 b2_p1_not b2_c1 b2_c1_not b2_q2 b2_q2_not b2_p2 b2_p2_not b2_q3 b2_q3_not
++ b2_p3 b2_p3_not b2_q4 b2_q4_not b2_p4 b2_p4_not b2_q5 b2_q5_not b2_p5 b2_p5_not b2_q6 b2_q6_not b2_p6 b2_p6_not b2_q7 b2_q7_not b2_p7
++ b2_p7_not b2_c3 b2_c3_not b2_c4 b2_c4_not b2_c5 b2_c5_not b2_c6 b2_c6_not b2_c7 b2_c7_not x0_c0_f x0_c0_f_not x1_c0_f x1_c0_f_not x0_b0_f
++ x0_b0_f_not x0_c0_b x0_c0_b_not b0_r2_b b0_r2_b_not b0_r3_b b0_r3_b_not b0_r4_b b0_r4_b_not b0_r5_b b0_r5_b_not b0_r6_b b0_r6_b_not b0_r7_b
++ b0_r7_b_not x0_a7_f x0_a7_f_not x0_a7_b x0_a7_b_not x1_b0_f x1_b0_f_not p2 p2_not x1_c0_b x1_c0_b_not b2_r0_b b2_r0_b_not b2_r1_b b2_r1_b_not
++ b2_r2_b b2_r2_b_not b2_r3_b b2_r3_b_not b2_r4_b b2_r4_b_not b2_r5_b b2_r5_b_not b2_r6_b b2_r6_b_not b2_r7_b b2_r7_b_not b3_c0 b3_c0_not
++ b3_q0 b3_q0_not b3_p0 b3_p0_not b3_q1 b3_q1_not b3_p1 b3_p1_not b3_c1 b3_c1_not b3_q2 b3_q2_not b3_p2 b3_p2_not b3_q3 b3_q3_not b3_p3
++ b3_p3_not b3_q4 b3_q4_not b3_p4 b3_p4_not b3_q5 b3_q5_not b3_p5 b3_p5_not b3_q6 b3_q6_not b3_p6 b3_p6_not b3_q7 b3_q7_not b3_p7 b3_p7_not
++ b3_c3 b3_c3_not b3_c4 b3_c4_not b3_c5 b3_c5_not b3_c6 b3_c6_not b3_c7 b3_c7_not x2_c0_f x2_c0_f_not x2_b0_f x2_b0_f_not p3 p3_not
++ x2_c0_b x2_c0_b_not b3_r0_b b3_r0_b_not b3_r1_b b3_r1_b_not b3_r2_b b3_r2_b_not b3_r3_b b3_r3_b_not b3_r4_b b3_r4_b_not b3_r5_b
++ b3_r5_b_not b3_r6_b b3_r6_b_not b3_r7_b b3_r7_b_not b4_c0 b4_c0_not b4_q0 b4_q0_not b4_p0 b4_p0_not b4_q1 b4_q1_not b4_p1 b4_p1_not b4_c1
++ b4_c1_not b4_q2 b4_q2_not b4_p2 b4_p2_not b4_q3 b4_q3_not b4_p3 b4_p3_not b4_q4 b4_q4_not b4_p4 b4_p4_not b4_q5 b4_q5_not b4_p5 b4_p5_not
++ b4_q6 b4_q6_not b4_p6 b4_p6_not b4_q7 b4_q7_not b4_p7 b4_p7_not b4_c3 b4_c3_not b4_c4 b4_c4_not b4_c5 b4_c5_not b4_c6 b4_c6_not b4_c7
++ b4_c7_not x3_c0_f x3_c0_f_not x3_b0_f x3_b0_f_not p4 p4_not x3_c0_b x3_c0_b_not b4_r0_b b4_r0_b_not b4_r1_b b4_r1_b_not b4_r2_b b4_r2_b_not
++ b4_r3_b b4_r3_b_not b4_r4_b b4_r4_b_not b4_r5_b b4_r5_b_not b4_r6_b b4_r6_b_not b4_r7_b b4_r7_b_not b5_c0 b5_c0_not b5_q0 b5_q0_not b5_p0
++ b5_p0_not b5_q1 b5_q1_not b5_p1 b5_p1_not b5_c1 b5_c1_not b5_q2 b5_q2_not b5_p2 b5_p2_not b5_q3 b5_q3_not b5_p3 b5_p3_not b5_q4 b5_q4_not
++ b5_p4 b5_p4_not b5_q5 b5_q5_not b5_p5 b5_p5_not b5_q6 b5_q6_not b5_p6 b5_p6_not b5_q7 b5_q7_not b5_p7 b5_p7_not b5_c3 b5_c3_not b5_c4
++ b5_c4_not b5_c5 b5_c5_not b5_c6 b5_c6_not b5_c7 b5_c7_not x4_c0_f x4_c0_f_not x4_b0_f x4_b0_f_not p5 p5_not x4_c0_b x4_c0_b_not b5_r0_b
++ b5_r0_b_not b5_r1_b b5_r1_b_not b5_r2_b b5_r2_b_not b5_r3_b b5_r3_b_not b5_r4_b b5_r4_b_not b5_r5_b b5_r5_b_not b5_r6_b b5_r6_b_not b5_r7_b
++ b5_r7_b_not b6_c0 b6_c0_not b6_q0 b6_q0_not b6_p0 b6_p0_not b6_q1 b6_q1_not b6_p1 b6_p1_not b6_c1 b6_c1_not b6_q2 b6_q2_not b6_p2 b6_p2_not
++ b6_q3 b6_q3_not b6_p3 b6_p3_not b6_q4 b6_q4_not b6_p4 b6_p4_not b6_q5 b6_q5_not b6_p5 b6_p5_not b6_q6 b6_q6_not b6_p6 b6_p6_not b6_q7
++ b6_q7_not b6_p7 b6_p7_not b6_c3 b6_c3_not b6_c4 b6_c4_not b6_c5 b6_c5_not b6_c6 b6_c6_not b6_c7 b6_c7_not x5_c0_f x5_c0_f_not x5_b0_f
++ x5_b0_f_not p6 p6_not x5_c0_b x5_c0_b_not b6_r0_b b6_r0_b_not b6_r1_b b6_r1_b_not b6_r2_b b6_r2_b_not b6_r3_b b6_r3_b_not b6_r4_b b6_r4_b_not
++ b6_r5_b b6_r5_b_not b6_r6_b b6_r6_b_not b6_r7_b b6_r7_b_not b7_c0 b7_c0_not b7_q0 b7_q0_not b7_p0 b7_p0_not b7_q1 b7_q1_not b7_p1
++ b7_p1_not b7_c1 b7_c1_not b7_q2 b7_q2_not b7_p2 b7_p2_not b7_q3 b7_q3_not b7_p3 b7_p3_not b7_q4 b7_q4_not b7_p4 b7_p4_not b7_q5 b7_q5_not
++ b7_p5 b7_p5_not b7_q6 b7_q6_not b7_p6 b7_p6_not b7_q7 b7_q7_not b7_p7 b7_p7_not b7_c3 b7_c3_not b7_c4 b7_c4_not b7_c5 b7_c5_not b7_c6
++ b7_c6_not b7_c7 b7_c7_not x6_c0_f x6_c0_f_not x6_b0_f x6_b0_f_not p7 p7_not x6_c0_b x6_c0_b_not b7_r0_b b7_r0_b_not b7_r1_b b7_r1_b_not
++ b7_r2_b b7_r2_b_not b7_r3_b b7_r3_b_not b7_r4_b b7_r4_b_not b7_r5_b b7_r5_b_not b7_r6_b b7_r6_b_not b7_r7_b b7_r7_b_not p8 p8_not p9
++ p9_not p10 p10_not p11 p11_not p12 p12_not p13 p13_not p14 p14_not p15 p15_not b6_c2 b6_c2_not b7_c2 b7_c2_not b4_c2 b4_c2_not b3_c2
++ b3_c2_not b2_c2 b2_c2_not b5_c2 b5_c2_not b2_not b2 b3_not b3 b4_not b4 b5_not b5 b6_not b6 b7_not b7
+*.PININFO vss:B vdd:B a0_not:B a0:B a1_not:B a1:B a2_not:B a2:B a3_not:B a3:B a4_not:B a4:B a5_not:B a5:B a6_not:B a6:B a7_not:B
+*+ a7:B b0_not:B b0:B b1_not:B b1:B p0:B p0_not:B p1:B p1_not:B b0_r1_b:B b0_r1_b_not:B b0_q0:B b0_q0_not:B b0_p0:B b0_p0_not:B b0_q1:B
+*+ b0_q1_not:B b0_p1:B b0_p1_not:B b0_q2:B b0_q2_not:B b0_p2:B b0_p2_not:B b0_q3:B b0_q3_not:B b0_p3:B b0_p3_not:B b0_q4:B b0_q4_not:B b0_p4:B
+*+ b0_p4_not:B b0_q5:B b0_q5_not:B b0_p5:B b0_p5_not:B b0_q6:B b0_q6_not:B b0_p6:B b0_p6_not:B b0_q7:B b0_q7_not:B b0_p7:B b0_p7_not:B b1_q7:B
+*+ b1_q7_not:B b1_p7:B b1_p7_not:B b1_q6:B b1_q6_not:B b1_p6:B b1_p6_not:B b1_q5:B b1_q5_not:B b1_p5:B b1_p5_not:B b1_q4:B b1_q4_not:B b1_p4:B
+*+ b1_p4_not:B b1_q3:B b1_q3_not:B b1_p3:B b1_p3_not:B b1_q2:B b1_q2_not:B b1_p2:B b1_p2_not:B b1_q1:B b1_q1_not:B b1_p1:B b1_p1_not:B b1_q0:B
+*+ b1_q0_not:B b1_p0:B b1_p0_not:B b1_c0:B b1_c0_not:B b1_c1:B b1_c1_not:B b1_c2:B b1_c2_not:B b1_c3:B b1_c3_not:B b1_c4:B b1_c4_not:B b1_c5:B
+*+ b1_c5_not:B b1_c6:B b1_c6_not:B b1_c7:B b1_c7_not:B b0_c7:B b0_c7_not:B b0_c6:B b0_c6_not:B b0_c5:B b0_c5_not:B b0_c4:B b0_c4_not:B b0_c3:B
+*+ b0_c3_not:B b0_c2:B b0_c2_not:B b0_c1:B b0_c1_not:B b0_c0:B b0_c0_not:B b2_c0:B b2_c0_not:B b2_q0:B b2_q0_not:B b2_p0:B b2_p0_not:B b2_q1:B
+*+ b2_q1_not:B b2_p1:B b2_p1_not:B b2_c1:B b2_c1_not:B b2_q2:B b2_q2_not:B b2_p2:B b2_p2_not:B b2_q3:B b2_q3_not:B b2_p3:B b2_p3_not:B b2_q4:B
+*+ b2_q4_not:B b2_p4:B b2_p4_not:B b2_q5:B b2_q5_not:B b2_p5:B b2_p5_not:B b2_q6:B b2_q6_not:B b2_p6:B b2_p6_not:B b2_q7:B b2_q7_not:B b2_p7:B
+*+ b2_p7_not:B b2_c3:B b2_c3_not:B b2_c4:B b2_c4_not:B b2_c5:B b2_c5_not:B b2_c6:B b2_c6_not:B b2_c7:B b2_c7_not:B x0_c0_f:B x0_c0_f_not:B
+*+ x1_c0_f:B x1_c0_f_not:B x0_b0_f:B x0_b0_f_not:B x0_c0_b:B x0_c0_b_not:B b0_r2_b:B b0_r2_b_not:B b0_r3_b:B b0_r3_b_not:B b0_r4_b:B
+*+ b0_r4_b_not:B b0_r5_b:B b0_r5_b_not:B b0_r6_b:B b0_r6_b_not:B b0_r7_b:B b0_r7_b_not:B x0_a7_f:B x0_a7_f_not:B x0_a7_b:B x0_a7_b_not:B x1_b0_f:B
+*+ x1_b0_f_not:B p2:B p2_not:B x1_c0_b:B x1_c0_b_not:B b2_r0_b:B b2_r0_b_not:B b2_r1_b:B b2_r1_b_not:B b2_r2_b:B b2_r2_b_not:B b2_r3_b:B
+*+ b2_r3_b_not:B b2_r4_b:B b2_r4_b_not:B b2_r5_b:B b2_r5_b_not:B b2_r6_b:B b2_r6_b_not:B b2_r7_b:B b2_r7_b_not:B b3_c0:B b3_c0_not:B b3_q0:B
+*+ b3_q0_not:B b3_p0:B b3_p0_not:B b3_q1:B b3_q1_not:B b3_p1:B b3_p1_not:B b3_c1:B b3_c1_not:B b3_q2:B b3_q2_not:B b3_p2:B b3_p2_not:B b3_q3:B
+*+ b3_q3_not:B b3_p3:B b3_p3_not:B b3_q4:B b3_q4_not:B b3_p4:B b3_p4_not:B b3_q5:B b3_q5_not:B b3_p5:B b3_p5_not:B b3_q6:B b3_q6_not:B b3_p6:B
+*+ b3_p6_not:B b3_q7:B b3_q7_not:B b3_p7:B b3_p7_not:B b3_c3:B b3_c3_not:B b3_c4:B b3_c4_not:B b3_c5:B b3_c5_not:B b3_c6:B b3_c6_not:B b3_c7:B
+*+ b3_c7_not:B x2_c0_f:B x2_c0_f_not:B x2_b0_f:B x2_b0_f_not:B p3:B p3_not:B x2_c0_b:B x2_c0_b_not:B b3_r0_b:B b3_r0_b_not:B b3_r1_b:B
+*+ b3_r1_b_not:B b3_r2_b:B b3_r2_b_not:B b3_r3_b:B b3_r3_b_not:B b3_r4_b:B b3_r4_b_not:B b3_r5_b:B b3_r5_b_not:B b3_r6_b:B b3_r6_b_not:B b3_r7_b:B
+*+ b3_r7_b_not:B b4_c0:B b4_c0_not:B b4_q0:B b4_q0_not:B b4_p0:B b4_p0_not:B b4_q1:B b4_q1_not:B b4_p1:B b4_p1_not:B b4_c1:B b4_c1_not:B b4_q2:B
+*+ b4_q2_not:B b4_p2:B b4_p2_not:B b4_q3:B b4_q3_not:B b4_p3:B b4_p3_not:B b4_q4:B b4_q4_not:B b4_p4:B b4_p4_not:B b4_q5:B b4_q5_not:B b4_p5:B
+*+ b4_p5_not:B b4_q6:B b4_q6_not:B b4_p6:B b4_p6_not:B b4_q7:B b4_q7_not:B b4_p7:B b4_p7_not:B b4_c3:B b4_c3_not:B b4_c4:B b4_c4_not:B b4_c5:B
+*+ b4_c5_not:B b4_c6:B b4_c6_not:B b4_c7:B b4_c7_not:B x3_c0_f:B x3_c0_f_not:B x3_b0_f:B x3_b0_f_not:B p4:B p4_not:B x3_c0_b:B x3_c0_b_not:B
+*+ b4_r0_b:B b4_r0_b_not:B b4_r1_b:B b4_r1_b_not:B b4_r2_b:B b4_r2_b_not:B b4_r3_b:B b4_r3_b_not:B b4_r4_b:B b4_r4_b_not:B b4_r5_b:B
+*+ b4_r5_b_not:B b4_r6_b:B b4_r6_b_not:B b4_r7_b:B b4_r7_b_not:B b5_c0:B b5_c0_not:B b5_q0:B b5_q0_not:B b5_p0:B b5_p0_not:B b5_q1:B b5_q1_not:B
+*+ b5_p1:B b5_p1_not:B b5_c1:B b5_c1_not:B b5_q2:B b5_q2_not:B b5_p2:B b5_p2_not:B b5_q3:B b5_q3_not:B b5_p3:B b5_p3_not:B b5_q4:B
+*+ b5_q4_not:B b5_p4:B b5_p4_not:B b5_q5:B b5_q5_not:B b5_p5:B b5_p5_not:B b5_q6:B b5_q6_not:B b5_p6:B b5_p6_not:B b5_q7:B b5_q7_not:B b5_p7:B
+*+ b5_p7_not:B b5_c3:B b5_c3_not:B b5_c4:B b5_c4_not:B b5_c5:B b5_c5_not:B b5_c6:B b5_c6_not:B b5_c7:B b5_c7_not:B x4_c0_f:B x4_c0_f_not:B
+*+ x4_b0_f:B x4_b0_f_not:B p5:B p5_not:B x4_c0_b:B x4_c0_b_not:B b5_r0_b:B b5_r0_b_not:B b5_r1_b:B b5_r1_b_not:B b5_r2_b:B b5_r2_b_not:B
+*+ b5_r3_b:B b5_r3_b_not:B b5_r4_b:B b5_r4_b_not:B b5_r5_b:B b5_r5_b_not:B b5_r6_b:B b5_r6_b_not:B b5_r7_b:B b5_r7_b_not:B b6_c0:B b6_c0_not:B
+*+ b6_q0:B b6_q0_not:B b6_p0:B b6_p0_not:B b6_q1:B b6_q1_not:B b6_p1:B b6_p1_not:B b6_c1:B b6_c1_not:B b6_q2:B b6_q2_not:B b6_p2:B
+*+ b6_p2_not:B b6_q3:B b6_q3_not:B b6_p3:B b6_p3_not:B b6_q4:B b6_q4_not:B b6_p4:B b6_p4_not:B b6_q5:B b6_q5_not:B b6_p5:B b6_p5_not:B b6_q6:B
+*+ b6_q6_not:B b6_p6:B b6_p6_not:B b6_q7:B b6_q7_not:B b6_p7:B b6_p7_not:B b6_c3:B b6_c3_not:B b6_c4:B b6_c4_not:B b6_c5:B b6_c5_not:B b6_c6:B
+*+ b6_c6_not:B b6_c7:B b6_c7_not:B x5_c0_f:B x5_c0_f_not:B x5_b0_f:B x5_b0_f_not:B p6:B p6_not:B x5_c0_b:B x5_c0_b_not:B b6_r0_b:B b6_r0_b_not:B
+*+ b6_r1_b:B b6_r1_b_not:B b6_r2_b:B b6_r2_b_not:B b6_r3_b:B b6_r3_b_not:B b6_r4_b:B b6_r4_b_not:B b6_r5_b:B b6_r5_b_not:B b6_r6_b:B
+*+ b6_r6_b_not:B b6_r7_b:B b6_r7_b_not:B b7_c0:B b7_c0_not:B b7_q0:B b7_q0_not:B b7_p0:B b7_p0_not:B b7_q1:B b7_q1_not:B b7_p1:B b7_p1_not:B
+*+ b7_c1:B b7_c1_not:B b7_q2:B b7_q2_not:B b7_p2:B b7_p2_not:B b7_q3:B b7_q3_not:B b7_p3:B b7_p3_not:B b7_q4:B b7_q4_not:B b7_p4:B
+*+ b7_p4_not:B b7_q5:B b7_q5_not:B b7_p5:B b7_p5_not:B b7_q6:B b7_q6_not:B b7_p6:B b7_p6_not:B b7_q7:B b7_q7_not:B b7_p7:B b7_p7_not:B b7_c3:B
+*+ b7_c3_not:B b7_c4:B b7_c4_not:B b7_c5:B b7_c5_not:B b7_c6:B b7_c6_not:B b7_c7:B b7_c7_not:B x6_c0_f:B x6_c0_f_not:B x6_b0_f:B x6_b0_f_not:B
+*+ p7:B p7_not:B x6_c0_b:B x6_c0_b_not:B b7_r0_b:B b7_r0_b_not:B b7_r1_b:B b7_r1_b_not:B b7_r2_b:B b7_r2_b_not:B b7_r3_b:B b7_r3_b_not:B
+*+ b7_r4_b:B b7_r4_b_not:B b7_r5_b:B b7_r5_b_not:B b7_r6_b:B b7_r6_b_not:B b7_r7_b:B b7_r7_b_not:B p8:B p8_not:B p9:B p9_not:B p10:B p10_not:B
+*+ p11:B p11_not:B p12:B p12_not:B p13:B p13_not:B p14:B p14_not:B p15:B p15_not:B b6_c2:B b6_c2_not:B b7_c2:B b7_c2_not:B b4_c2:B
+*+ b4_c2_not:B b3_c2:B b3_c2_not:B b2_c2:B b2_c2_not:B b5_c2:B b5_c2_not:B b2_not:B b2:B b3_not:B b3:B b4_not:B b4:B b5_not:B b5:B b6_not:B b6:B
+*+ b7_not:B b7:B
+x2 a0 b0 vss vdd a0_not b0_not p0 b0_c0 b0_p0 b0_q0 p0_not b0_p0_not b0_q0_not b0_c0_not CCNOT
+x4 a0 b1 vss vdd a0_not b1_not b1_r0 b1_c0 b1_p0 b1_q0 b1_r0_not b1_p0_not b1_q0_not b1_c0_not CCNOT
+x5 a1 b1 vss vdd a1_not b1_not b1_r1 b1_c1 b1_p1 b1_q1 b1_r1_not b1_p1_not b1_q1_not b1_c1_not CCNOT
+x6 a2 b1 vss vdd a2_not b1_not b1_r2 b1_c2 b1_p2 b1_q2 b1_r2_not b1_p2_not b1_q2_not b1_c2_not CCNOT
+x7 a3 b1 vss vdd a3_not b1_not b1_r3 b1_c3 b1_p3 b1_q3 b1_r3_not b1_p3_not b1_q3_not b1_c3_not CCNOT
+x8 a4 b1 vss vdd a4_not b1_not b1_r4 b1_c4 b1_p4 b1_q4 b1_r4_not b1_p4_not b1_q4_not b1_c4_not CCNOT
+x9 a5 b1 vss vdd a5_not b1_not b1_r5 b1_c5 b1_p5 b1_q5 b1_r5_not b1_p5_not b1_q5_not b1_c5_not CCNOT
+x10 a6 b1 vss vdd a6_not b1_not b1_r6 b1_c6 b1_p6 b1_q6 b1_r6_not b1_p6_not b1_q6_not b1_c6_not CCNOT
+x11 a7 b1 vss vdd a7_not b1_not b1_r7 b1_c7 b1_p7 b1_q7 b1_r7_not b1_p7_not b1_q7_not b1_c7_not CCNOT
+x13 a1 b0 vss vdd a1_not b0_not b0_r1 b0_c1 b0_p1 b0_q1 b0_r1_not b0_p1_not b0_q1_not b0_c1_not CCNOT
+x14 a2 b0 vss vdd a2_not b0_not b0_r2 b0_c2 b0_p2 b0_q2 b0_r2_not b0_p2_not b0_q2_not b0_c2_not CCNOT
+x15 a3 b0 vss vdd a3_not b0_not b0_r3 b0_c3 b0_p3 b0_q3 b0_r3_not b0_p3_not b0_q3_not b0_c3_not CCNOT
+x16 a4 b0 vss vdd a4_not b0_not b0_r4 b0_c4 b0_p4 b0_q4 b0_r4_not b0_p4_not b0_q4_not b0_c4_not CCNOT
+x17 a5 b0 vss vdd a5_not b0_not b0_r5 b0_c5 b0_p5 b0_q5 b0_r5_not b0_p5_not b0_q5_not b0_c5_not CCNOT
+x18 a6 b0 vss vdd a6_not b0_not b0_r6 b0_c6 b0_p6 b0_q6 b0_r6_not b0_p6_not b0_q6_not b0_c6_not CCNOT
+x19 a7 b0 vss vdd a7_not b0_not b0_r7 b0_c7 b0_p7 b0_q7 b0_r7_not b0_p7_not b0_q7_not b0_c7_not CCNOT
+x12 a0 b2 vss vdd a0_not b2_not b2_r0 b2_c0 b2_p0 b2_q0 b2_r0_not b2_p0_not b2_q0_not b2_c0_not CCNOT
+x20 a1 b2 vss vdd a1_not b2_not b2_r1 b2_c1 b2_p1 b2_q1 b2_r1_not b2_p1_not b2_q1_not b2_c1_not CCNOT
+x21 a2 b2 vss vdd a2_not b2_not b2_r2 b2_c2 b2_p2 b2_q2 b2_r2_not b2_p2_not b2_q2_not b2_c2_not CCNOT
+x22 a3 b2 vss vdd a3_not b2_not b2_r3 b2_c3 b2_p3 b2_q3 b2_r3_not b2_p3_not b2_q3_not b2_c3_not CCNOT
+x23 a4 b2 vss vdd a4_not b2_not b2_r4 b2_c4 b2_p4 b2_q4 b2_r4_not b2_p4_not b2_q4_not b2_c4_not CCNOT
+x24 a5 b2 vss vdd a5_not b2_not b2_r5 b2_c5 b2_p5 b2_q5 b2_r5_not b2_p5_not b2_q5_not b2_c5_not CCNOT
+x25 a6 b2 vss vdd a6_not b2_not b2_r6 b2_c6 b2_p6 b2_q6 b2_r6_not b2_p6_not b2_q6_not b2_c6_not CCNOT
+x26 a7 b2 vss vdd a7_not b2_not b2_r7 b2_c7 b2_p7 b2_q7 b2_r7_not b2_p7_not b2_q7_not b2_c7_not CCNOT
+M9 x0_b0_f_not net1 x0_s8 vss nfet_03v3 L=0.55u W=1.37u nf=1 m=1
+M10 x0_b0_f_not net2 x0_s8 vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M11 x0_s8 net2 x0_b0_f vss nfet_03v3 L=0.55u W=1.415u nf=1 m=1
+M12 x0_s8 net1 x0_b0_f vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M13 x0_b0_f net1 x0_s8_not vss nfet_03v3 L=0.55u W=1.365u nf=1 m=1
+M14 x0_b0_f net2 x0_s8_not vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M15 x0_s8_not net2 x0_b0_f_not vss nfet_03v3 L=0.55u W=1.385u nf=1 m=1
+M16 x0_s8_not net1 x0_b0_f_not vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+x27 vdd vss x0_c0_f x0_c0_b x0_c0_f_not x0_c0_b_not p1 b1_r0 p1_not b1_r0_not b0_r1 b0_r1_b b0_r1_b_not b0_r1_not b1_r1 x0_s1
++ b1_r1_not x0_s1_not b0_r2 b0_r2_b b0_r2_not b0_r2_b_not x0_s2 b1_r2 x0_s2_not b1_r2_not b0_r3_b b0_r3 b0_r3_not b0_r3_b_not x0_s3 b1_r3
++ x0_s3_not b1_r3_not b0_r4_b b0_r4 b0_r4_not b0_r4_b_not x0_s4 b1_r4 b1_r4_not x0_s4_not b0_r5_b b0_r5 b0_r5_b_not b0_r5_not b1_r5 x0_s5
++ b1_r5_not x0_s5_not b0_r6 b0_r6_b b0_r6_b_not b0_r6_not b1_r6 x0_s6 b1_r6_not x0_s6_not b0_r7 b0_r7_b b0_r7_b_not b0_r7_not x0_s7 b1_r7
++ b1_r7_not x0_s7_not x0_a7_b x0_a7_f x0_a7_b_not x0_a7_f_not net1 net2 net1 net2 8b_FA_ripple
+x1 vdd vss x1_c0_f x1_c0_b x1_c0_f_not x1_c0_b_not p2 x0_s1 p2_not x0_s1_not b2_r0 b2_r0_b b2_r0_b_not b2_r0_not x0_s2 x1_s1
++ x0_s2_not x1_s1_not b2_r1 b2_r1_b b2_r1_not b2_r1_b_not x1_s2 x0_s3 x1_s2_not x0_s3_not b2_r2_b b2_r2 b2_r2_not b2_r2_b_not x1_s3 x0_s4
++ x1_s3_not x0_s4_not b2_r3_b b2_r3 b2_r3_not b2_r3_b_not x1_s4 x0_s5 x0_s5_not x1_s4_not b2_r4_b b2_r4 b2_r4_b_not b2_r4_not x0_s6 x1_s5
++ x0_s6_not x1_s5_not b2_r5 b2_r5_b b2_r5_b_not b2_r5_not x0_s7 x1_s6 x0_s7_not x1_s6_not b2_r6 b2_r6_b b2_r6_b_not b2_r6_not x1_s7 x0_s8
++ x0_s8_not x1_s7_not b2_r7_b b2_r7 b2_r7_b_not b2_r7_not net3 net4 net3 net4 8b_FA_ripple
+M1 x1_b0_f_not net3 x1_s8 vss nfet_03v3 L=0.55u W=1.37u nf=1 m=1
+M2 x1_b0_f_not net4 x1_s8 vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M3 x1_s8 net4 x1_b0_f vss nfet_03v3 L=0.55u W=1.415u nf=1 m=1
+M4 x1_s8 net3 x1_b0_f vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M5 x1_b0_f net3 x1_s8_not vss nfet_03v3 L=0.55u W=1.365u nf=1 m=1
+M6 x1_b0_f net4 x1_s8_not vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M7 x1_s8_not net4 x1_b0_f_not vss nfet_03v3 L=0.55u W=1.385u nf=1 m=1
+M8 x1_s8_not net3 x1_b0_f_not vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+x3 a0 b3 vss vdd a0_not b3_not b3_r0 b3_c0 b3_p0 b3_q0 b3_r0_not b3_p0_not b3_q0_not b3_c0_not CCNOT
+x28 a1 b3 vss vdd a1_not b3_not b3_r1 b3_c1 b3_p1 b3_q1 b3_r1_not b3_p1_not b3_q1_not b3_c1_not CCNOT
+x29 a2 b3 vss vdd a2_not b3_not b3_r2 b3_c2 b3_p2 b3_q2 b3_r2_not b3_p2_not b3_q2_not b3_c2_not CCNOT
+x30 a3 b3 vss vdd a3_not b3_not b3_r3 b3_c3 b3_p3 b3_q3 b3_r3_not b3_p3_not b3_q3_not b3_c3_not CCNOT
+x31 a4 b3 vss vdd a4_not b3_not b3_r4 b3_c4 b3_p4 b3_q4 b3_r4_not b3_p4_not b3_q4_not b3_c4_not CCNOT
+x32 a5 b3 vss vdd a5_not b3_not b3_r5 b3_c5 b3_p5 b3_q5 b3_r5_not b3_p5_not b3_q5_not b3_c5_not CCNOT
+x33 a6 b3 vss vdd a6_not b3_not b3_r6 b3_c6 b3_p6 b3_q6 b3_r6_not b3_p6_not b3_q6_not b3_c6_not CCNOT
+x34 a7 b3 vss vdd a7_not b3_not b3_r7 b3_c7 b3_p7 b3_q7 b3_r7_not b3_p7_not b3_q7_not b3_c7_not CCNOT
+x35 vdd vss x2_c0_f x2_c0_b x2_c0_f_not x2_c0_b_not p3 x1_s1 p3_not x1_s1_not b3_r0 b3_r0_b b3_r0_b_not b3_r0_not x1_s2 x2_s1
++ x1_s2_not x2_s1_not b3_r1 b3_r1_b b3_r1_not b3_r1_b_not x2_s2 x1_s3 x2_s2_not x1_s3_not b3_r2_b b3_r2 b3_r2_not b3_r2_b_not x2_s3 x1_s4
++ x2_s3_not x1_s4_not b3_r3_b b3_r3 b3_r3_not b3_r3_b_not x2_s4 x1_s5 x1_s5_not x2_s4_not b3_r4_b b3_r4 b3_r4_b_not b3_r4_not x1_s6 x2_s5
++ x1_s6_not x2_s5_not b3_r5 b3_r5_b b3_r5_b_not b3_r5_not x1_s7 x2_s6 x1_s7_not x2_s6_not b3_r6 b3_r6_b b3_r6_b_not b3_r6_not x2_s7 x1_s8
++ x1_s8_not x2_s7_not b3_r7_b b3_r7 b3_r7_b_not b3_r7_not net5 net6 net5 net6 8b_FA_ripple
+M17 x2_b0_f_not net5 x2_s8 vss nfet_03v3 L=0.55u W=1.37u nf=1 m=1
+M18 x2_b0_f_not net6 x2_s8 vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M19 x2_s8 net6 x2_b0_f vss nfet_03v3 L=0.55u W=1.415u nf=1 m=1
+M20 x2_s8 net5 x2_b0_f vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M21 x2_b0_f net5 x2_s8_not vss nfet_03v3 L=0.55u W=1.365u nf=1 m=1
+M22 x2_b0_f net6 x2_s8_not vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M23 x2_s8_not net6 x2_b0_f_not vss nfet_03v3 L=0.55u W=1.385u nf=1 m=1
+M24 x2_s8_not net5 x2_b0_f_not vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+x36 a0 b4 vss vdd a0_not b4_not b4_r0 b4_c0 b4_p0 b4_q0 b4_r0_not b4_p0_not b4_q0_not b4_c0_not CCNOT
+x37 a1 b4 vss vdd a1_not b4_not b4_r1 b4_c1 b4_p1 b4_q1 b4_r1_not b4_p1_not b4_q1_not b4_c1_not CCNOT
+x38 a2 b4 vss vdd a2_not b4_not b4_r2 b4_c2 b4_p2 b4_q2 b4_r2_not b4_p2_not b4_q2_not b4_c2_not CCNOT
+x39 a3 b4 vss vdd a3_not b4_not b4_r3 b4_c3 b4_p3 b4_q3 b4_r3_not b4_p3_not b4_q3_not b4_c3_not CCNOT
+x40 a4 b4 vss vdd a4_not b4_not b4_r4 b4_c4 b4_p4 b4_q4 b4_r4_not b4_p4_not b4_q4_not b4_c4_not CCNOT
+x41 a5 b4 vss vdd a5_not b4_not b4_r5 b4_c5 b4_p5 b4_q5 b4_r5_not b4_p5_not b4_q5_not b4_c5_not CCNOT
+x42 a6 b4 vss vdd a6_not b4_not b4_r6 b4_c6 b4_p6 b4_q6 b4_r6_not b4_p6_not b4_q6_not b4_c6_not CCNOT
+x43 a7 b4 vss vdd a7_not b4_not b4_r7 b4_c7 b4_p7 b4_q7 b4_r7_not b4_p7_not b4_q7_not b4_c7_not CCNOT
+x44 vdd vss x3_c0_f x3_c0_b x3_c0_f_not x3_c0_b_not p4 x2_s1 p4_not x2_s1_not b4_r0 b4_r0_b b4_r0_b_not b4_r0_not x2_s2 x3_s1
++ x2_s2_not x3_s1_not b4_r1 b4_r1_b b4_r1_not b4_r1_b_not x3_s2 x2_s3 x3_s2_not x2_s3_not b4_r2_b b4_r2 b4_r2_not b4_r2_b_not x3_s3 x2_s4
++ x3_s3_not x2_s4_not b4_r3_b b4_r3 b4_r3_not b4_r3_b_not x3_s4 x2_s5 x2_s5_not x3_s4_not b4_r4_b b4_r4 b4_r4_b_not b4_r4_not x2_s6 x3_s5
++ x2_s6_not x3_s5_not b4_r5 b4_r5_b b4_r5_b_not b4_r5_not x2_s7 x3_s6 x2_s7_not x3_s6_not b4_r6 b4_r6_b b4_r6_b_not b4_r6_not x3_s7 x2_s8
++ x2_s8_not x3_s7_not b4_r7_b b4_r7 b4_r7_b_not b4_r7_not net7 net8 net7 net8 8b_FA_ripple
+M25 x3_b0_f_not net7 x3_s8 vss nfet_03v3 L=0.55u W=1.37u nf=1 m=1
+M26 x3_b0_f_not net8 x3_s8 vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M27 x3_s8 net8 x3_b0_f vss nfet_03v3 L=0.55u W=1.415u nf=1 m=1
+M28 x3_s8 net7 x3_b0_f vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M29 x3_b0_f net7 x3_s8_not vss nfet_03v3 L=0.55u W=1.365u nf=1 m=1
+M30 x3_b0_f net8 x3_s8_not vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M31 x3_s8_not net8 x3_b0_f_not vss nfet_03v3 L=0.55u W=1.385u nf=1 m=1
+M32 x3_s8_not net7 x3_b0_f_not vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+x45 a0 b5 vss vdd a0_not b5_not b5_r0 b5_c0 b5_p0 b5_q0 b5_r0_not b5_p0_not b5_q0_not b5_c0_not CCNOT
+x46 a1 b5 vss vdd a1_not b5_not b5_r1 b5_c1 b5_p1 b5_q1 b5_r1_not b5_p1_not b5_q1_not b5_c1_not CCNOT
+x47 a2 b5 vss vdd a2_not b5_not b5_r2 b5_c2 b5_p2 b5_q2 b5_r2_not b5_p2_not b5_q2_not b5_c2_not CCNOT
+x48 a3 b5 vss vdd a3_not b5_not b5_r3 b5_c3 b5_p3 b5_q3 b5_r3_not b5_p3_not b5_q3_not b5_c3_not CCNOT
+x49 a4 b5 vss vdd a4_not b5_not b5_r4 b5_c4 b5_p4 b5_q4 b5_r4_not b5_p4_not b5_q4_not b5_c4_not CCNOT
+x50 a5 b5 vss vdd a5_not b5_not b5_r5 b5_c5 b5_p5 b5_q5 b5_r5_not b5_p5_not b5_q5_not b5_c5_not CCNOT
+x51 a6 b5 vss vdd a6_not b5_not b5_r6 b5_c6 b5_p6 b5_q6 b5_r6_not b5_p6_not b5_q6_not b5_c6_not CCNOT
+x52 a7 b5 vss vdd a7_not b5_not b5_r7 b5_c7 b5_p7 b5_q7 b5_r7_not b5_p7_not b5_q7_not b5_c7_not CCNOT
+x53 vdd vss x4_c0_f x4_c0_b x4_c0_f_not x4_c0_b_not p5 x3_s1 p5_not x3_s1_not b5_r0 b5_r0_b b5_r0_b_not b5_r0_not x3_s2 x4_s1
++ x3_s2_not x4_s1_not b5_r1 b5_r1_b b5_r1_not b5_r1_b_not x4_s2 x3_s3 x4_s2_not x3_s3_not b5_r2_b b5_r2 b5_r2_not b5_r2_b_not x4_s3 x3_s4
++ x4_s3_not x3_s4_not b5_r3_b b5_r3 b5_r3_not b5_r3_b_not x4_s4 x3_s5 x3_s5_not x4_s4_not b5_r4_b b5_r4 b5_r4_b_not b5_r4_not x3_s6 x4_s5
++ x3_s6_not x4_s5_not b5_r5 b5_r5_b b5_r5_b_not b5_r5_not x3_s7 x4_s6 x3_s7_not x4_s6_not b5_r6 b5_r6_b b5_r6_b_not b5_r6_not x4_s7 x3_s8
++ x3_s8_not x4_s7_not b5_r7_b b5_r7 b5_r7_b_not b5_r7_not net9 net10 net9 net10 8b_FA_ripple
+M33 x4_b0_f_not net9 x4_s8 vss nfet_03v3 L=0.55u W=1.37u nf=1 m=1
+M34 x4_b0_f_not net10 x4_s8 vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M35 x4_s8 net10 x4_b0_f vss nfet_03v3 L=0.55u W=1.415u nf=1 m=1
+M36 x4_s8 net9 x4_b0_f vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M37 x4_b0_f net9 x4_s8_not vss nfet_03v3 L=0.55u W=1.365u nf=1 m=1
+M38 x4_b0_f net10 x4_s8_not vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M39 x4_s8_not net10 x4_b0_f_not vss nfet_03v3 L=0.55u W=1.385u nf=1 m=1
+M40 x4_s8_not net9 x4_b0_f_not vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+x54 a0 b6 vss vdd a0_not b6_not b6_r0 b6_c0 b6_p0 b6_q0 b6_r0_not b6_p0_not b6_q0_not b6_c0_not CCNOT
+x55 a1 b6 vss vdd a1_not b6_not b6_r1 b6_c1 b6_p1 b6_q1 b6_r1_not b6_p1_not b6_q1_not b6_c1_not CCNOT
+x56 a2 b6 vss vdd a2_not b6_not b6_r2 b6_c2 b6_p2 b6_q2 b6_r2_not b6_p2_not b6_q2_not b6_c2_not CCNOT
+x57 a3 b6 vss vdd a3_not b6_not b6_r3 b6_c3 b6_p3 b6_q3 b6_r3_not b6_p3_not b6_q3_not b6_c3_not CCNOT
+x58 a4 b6 vss vdd a4_not b6_not b6_r4 b6_c4 b6_p4 b6_q4 b6_r4_not b6_p4_not b6_q4_not b6_c4_not CCNOT
+x59 a5 b6 vss vdd a5_not b6_not b6_r5 b6_c5 b6_p5 b6_q5 b6_r5_not b6_p5_not b6_q5_not b6_c5_not CCNOT
+x60 a6 b6 vss vdd a6_not b6_not b6_r6 b6_c6 b6_p6 b6_q6 b6_r6_not b6_p6_not b6_q6_not b6_c6_not CCNOT
+x61 a7 b6 vss vdd a7_not b6_not b6_r7 b6_c7 b6_p7 b6_q7 b6_r7_not b6_p7_not b6_q7_not b6_c7_not CCNOT
+x62 vdd vss x5_c0_f x5_c0_b x5_c0_f_not x5_c0_b_not p6 x4_s1 p6_not x4_s1_not b6_r0 b6_r0_b b6_r0_b_not b6_r0_not x4_s2 x5_s1
++ x4_s2_not x5_s1_not b6_r1 b6_r1_b b6_r1_not b6_r1_b_not x5_s2 x4_s3 x5_s2_not x4_s3_not b6_r2_b b6_r2 b6_r2_not b6_r2_b_not x5_s3 x4_s4
++ x5_s3_not x4_s4_not b6_r3_b b6_r3 b6_r3_not b6_r3_b_not x5_s4 x4_s5 x4_s5_not x5_s4_not b6_r4_b b6_r4 b6_r4_b_not b6_r4_not x4_s6 x5_s5
++ x4_s6_not x5_s5_not b6_r5 b6_r5_b b6_r5_b_not b6_r5_not x4_s7 x5_s6 x4_s7_not x5_s6_not b6_r6 b6_r6_b b6_r6_b_not b6_r6_not x5_s7 x4_s8
++ x4_s8_not x5_s7_not b6_r7_b b6_r7 b6_r7_b_not b6_r7_not net11 net12 net11 net12 8b_FA_ripple
+M41 x5_b0_f_not net11 x5_s8 vss nfet_03v3 L=0.55u W=1.37u nf=1 m=1
+M42 x5_b0_f_not net12 x5_s8 vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M43 x5_s8 net12 x5_b0_f vss nfet_03v3 L=0.55u W=1.415u nf=1 m=1
+M44 x5_s8 net11 x5_b0_f vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M45 x5_b0_f net11 x5_s8_not vss nfet_03v3 L=0.55u W=1.365u nf=1 m=1
+M46 x5_b0_f net12 x5_s8_not vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M47 x5_s8_not net12 x5_b0_f_not vss nfet_03v3 L=0.55u W=1.385u nf=1 m=1
+M48 x5_s8_not net11 x5_b0_f_not vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+x63 a0 b7 vss vdd a0_not b7_not b7_r0 b7_c0 b7_p0 b7_q0 b7_r0_not b7_p0_not b7_q0_not b7_c0_not CCNOT
+x64 a1 b7 vss vdd a1_not b7_not b7_r1 b7_c1 b7_p1 b7_q1 b7_r1_not b7_p1_not b7_q1_not b7_c1_not CCNOT
+x65 a2 b7 vss vdd a2_not b7_not b7_r2 b7_c2 b7_p2 b7_q2 b7_r2_not b7_p2_not b7_q2_not b7_c2_not CCNOT
+x66 a3 b7 vss vdd a3_not b7_not b7_r3 b7_c3 b7_p3 b7_q3 b7_r3_not b7_p3_not b7_q3_not b7_c3_not CCNOT
+x67 a4 b7 vss vdd a4_not b7_not b7_r4 b7_c4 b7_p4 b7_q4 b7_r4_not b7_p4_not b7_q4_not b7_c4_not CCNOT
+x68 a5 b7 vss vdd a5_not b7_not b7_r5 b7_c5 b7_p5 b7_q5 b7_r5_not b7_p5_not b7_q5_not b7_c5_not CCNOT
+x69 a6 b7 vss vdd a6_not b7_not b7_r6 b7_c6 b7_p6 b7_q6 b7_r6_not b7_p6_not b7_q6_not b7_c6_not CCNOT
+x70 a7 b7 vss vdd a7_not b7_not b7_r7 b7_c7 b7_p7 b7_q7 b7_r7_not b7_p7_not b7_q7_not b7_c7_not CCNOT
+x71 vdd vss x6_c0_f x6_c0_b x6_c0_f_not x6_c0_b_not p7 x5_s1 p7_not x5_s1_not b7_r0 b7_r0_b b7_r0_b_not b7_r0_not x5_s2 p8
++ x5_s2_not p8_not b7_r1 b7_r1_b b7_r1_not b7_r1_b_not p9 x5_s3 p9_not x5_s3_not b7_r2_b b7_r2 b7_r2_not b7_r2_b_not p10 x5_s4 p10_not
++ x5_s4_not b7_r3_b b7_r3 b7_r3_not b7_r3_b_not p11 x5_s5 x5_s5_not p11_not b7_r4_b b7_r4 b7_r4_b_not b7_r4_not x5_s6 p12 x5_s6_not p12_not
++ b7_r5 b7_r5_b b7_r5_b_not b7_r5_not x5_s7 p13 x5_s7_not p13_not b7_r6 b7_r6_b b7_r6_b_not b7_r6_not p14 x5_s8 x5_s8_not p14_not b7_r7_b
++ b7_r7 b7_r7_b_not b7_r7_not net13 net14 net13 net14 8b_FA_ripple
+M49 x6_b0_f_not net13 p15 vss nfet_03v3 L=0.55u W=1.37u nf=1 m=1
+M50 x6_b0_f_not net14 p15 vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M51 p15 net14 x6_b0_f vss nfet_03v3 L=0.55u W=1.415u nf=1 m=1
+M52 p15 net13 x6_b0_f vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M53 x6_b0_f net13 p15_not vss nfet_03v3 L=0.55u W=1.365u nf=1 m=1
+M54 x6_b0_f net14 p15_not vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M55 p15_not net14 x6_b0_f_not vss nfet_03v3 L=0.55u W=1.385u nf=1 m=1
+M56 p15_not net13 x6_b0_f_not vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+.ends
+
+* expanding   symbol:  final_project/standard_cells/CCNOT/CCNOT.sym # of pins=14
+** sym_path: /foss/designs/final_project/standard_cells/CCNOT/CCNOT.sym
+** sch_path: /foss/designs/final_project/standard_cells/CCNOT/CCNOT.sch
+.subckt CCNOT a b vss vdd a_not b_not r c p q r_not p_not q_not c_not
+*.PININFO vdd:B vss:B b_not:B a_not:B b:B a:B r:B r_not:B q_not:B p_not:B q:B p:B c_not:B c:B
+M1 c_not a_not net2 vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M2 net2 b_not r vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M3 c_not b net1 vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M4 net1 a r vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M5 r b_not c vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M6 r a_not c vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M7 r b c vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M8 r a c vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M9 c a_not net4 vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M10 net4 b_not r_not vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M11 c b net3 vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M12 net3 a r_not vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M13 r_not b_not c_not vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M14 r_not a_not c_not vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M15 r_not b c_not vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M16 r_not a c_not vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  final_project/devices/8b_FA_ripple/8b_FA_ripple.sym # of pins=74
+** sym_path: /foss/designs/final_project/devices/8b_FA_ripple/8b_FA_ripple.sym
+** sch_path: /foss/designs/final_project/devices/8b_FA_ripple/8b_FA_ripple.sch
+.subckt 8b_FA_ripple vdd vss c0_f c0_b c0_not_f c0_not_b s0 b0 s0_not b0_not a0_f a0_b a0_not_b a0_not_f b1 s1 b1_not s1_not a1_f
++ a1_b a1_not_f a1_not_b s2 b2 s2_not b2_not a2_b a2_f a2_not_f a2_not_b s3 b3 s3_not b3_not a3_b a3_f a3_not_f a3_not_b s4 b4 b4_not
++ s4_not a4_b a4_f a4_not_b a4_not_f b5 s5 b5_not s5_not a5_f a5_b a5_not_b a5_not_f b6 s6 b6_not s6_not a6_f a6_b a6_not_b a6_not_f s7 b7
++ b7_not s7_not a7_b a7_f a7_not_b a7_not_f r7_maj r7_maj_not r7_uma r7_uma_not
+*.PININFO c0_f:B c0_not_f:B b0:B b0_not:B a0_f:B a0_not_f:B b7:B b7_not:B a7_f:B a7_not_f:B b1:B b1_not:B a1_f:B a1_not_f:B vdd:B
+*+ vss:B b2:B b2_not:B a2_f:B a2_not_f:B b3:B b3_not:B a3_f:B a3_not_f:B b6:B b6_not:B a6_f:B a6_not_f:B b5:B b5_not:B a5_f:B a5_not_f:B
+*+ b4:B b4_not:B a4_f:B a4_not_f:B a1_not_b:B a1_b:B s1_not:B s1:B a0_not_b:B a0_b:B s0_not:B s0:B c0_not_b:B c0_b:B a2_not_b:B a2_b:B
+*+ s2_not:B s2:B a3_not_b:B a3_b:B s3_not:B s3:B a4_not_b:B a4_b:B s4_not:B s4:B a5_not_b:B a5_b:B s5_not:B s5:B a6_not_b:B a6_b:B s6_not:B
+*+ s6:B a7_not_b:B a7_b:B s7_not:B s7:B r7_maj:B r7_maj_not:B r7_uma:B r7_uma_not:B
+x1 vdd vss c0_f c0_not_f b0 b0_not a0_f net1 net2 a0_not_f net43 net44 net45 net46 MAJ
+x2 vdd vss net2 net1 b1 b1_not a1_f net4 net3 a1_not_f net39 net40 net41 net42 MAJ
+x3 vdd vss net3 net4 b2 b2_not a2_f net6 net5 a2_not_f net35 net36 net37 net38 MAJ
+x4 vdd vss net5 net6 b3 b3_not a3_f net7 net8 a3_not_f net31 net32 net33 net34 MAJ
+x5 vdd vss net8 net7 b4 b4_not a4_f net10 net9 a4_not_f net27 net28 net29 net30 MAJ
+x6 vdd vss net9 net10 b5 b5_not a5_f net12 net11 a5_not_f net23 net24 net25 net26 MAJ
+x7 vdd vss net11 net12 b6 b6_not a6_f net13 net14 a6_not_f net19 net20 net21 net22 MAJ
+x8 vdd vss net14 net13 b7 b7_not a7_f r7_maj_not r7_maj a7_not_f net18 net17 net16 net15 MAJ
+x11 vdd vss net26 net52 net51 net25 net24 s5 net23 s5_not net50 net49 a5_b a5_not_b UMA
+x12 vdd vss net30 net54 net53 net29 net28 s4 net27 s4_not net52 net51 a4_b a4_not_b UMA
+x13 vdd vss net34 net56 net55 net33 net32 s3 net31 s3_not net54 net53 a3_b a3_not_b UMA
+x14 vdd vss net38 net58 net57 net37 net36 s2 net35 s2_not net56 net55 a2_b a2_not_b UMA
+x15 vdd vss net42 net59 net60 net41 net40 s1 net39 s1_not net58 net57 a1_b a1_not_b UMA
+x16 vdd vss net46 c0_b c0_not_b net45 net44 s0 net43 s0_not net59 net60 a0_b a0_not_b UMA
+x9 vdd vss net15 net48 net47 net16 net17 s7 net18 s7_not r7_uma r7_uma_not a7_b a7_not_b UMA
+x10 vdd vss net22 net50 net49 net21 net20 s6 net19 s6_not net48 net47 a6_b a6_not_b UMA
+.ends
+
+
+* expanding   symbol:  final_project/devices/MAJ/MAJ.sym # of pins=14
+** sym_path: /foss/designs/final_project/devices/MAJ/MAJ.sym
+** sch_path: /foss/designs/final_project/devices/MAJ/MAJ.sch
+.subckt MAJ vdd vss c_i c_not_i b_i b_not_i a_i r_not_i r_i a_not_i q_not_i q_i p_not_i p_i
+*.PININFO c_not_i:B b_i:B a_i:B a_not_i:B b_not_i:B c_i:B p_not_i:B q_i:B r_i:B r_not_i:B q_not_i:B p_i:B vss:B vdd:B
+M1 b_not_i a_i q_i vss nfet_03v3 L=0.55u W=1.37u nf=1 m=1
+M2 b_not_i a_not_i q_i vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M3 q_i a_not_i b_i vss nfet_03v3 L=0.55u W=1.415u nf=1 m=1
+M4 q_i a_i b_i vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M5 b_i a_i q_not_i vss nfet_03v3 L=0.55u W=1.365u nf=1 m=1
+M6 b_i a_not_i q_not_i vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M7 q_not_i a_not_i b_not_i vss nfet_03v3 L=0.55u W=1.385u nf=1 m=1
+M8 q_not_i a_i b_not_i vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M9 c_not_i a_i p_i vss nfet_03v3 L=0.55u W=1.37u nf=1 m=1
+M10 c_not_i a_not_i p_i vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M11 p_i a_not_i c_i vss nfet_03v3 L=0.55u W=1.415u nf=1 m=1
+M12 p_i a_i c_i vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M13 c_i a_i p_not_i vss nfet_03v3 L=0.55u W=1.365u nf=1 m=1
+M14 c_i a_not_i p_not_i vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M15 p_not_i a_not_i c_not_i vss nfet_03v3 L=0.55u W=1.385u nf=1 m=1
+M16 p_not_i a_i c_not_i vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M17 a_not_i p_not_i net2 vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M18 net2 q_not_i r_i vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M19 a_not_i q_i net1 vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M20 net1 p_i r_i vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M21 r_i q_not_i a_i vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M22 r_i p_not_i a_i vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M23 r_i q_i a_i vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M24 r_i p_i a_i vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M25 a_i p_not_i net4 vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M26 net4 q_not_i r_not_i vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M27 a_i q_i net3 vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M28 net3 p_i r_not_i vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M29 r_not_i q_not_i a_not_i vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M30 r_not_i p_not_i a_not_i vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M31 r_not_i q_i a_not_i vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M32 r_not_i p_i a_not_i vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+.ends
+
+
+* expanding   symbol:  final_project/devices/UMA/UMA.sym # of pins=14
+** sym_path: /foss/designs/final_project/devices/UMA/UMA.sym
+** sch_path: /foss/designs/final_project/devices/UMA/UMA.sch
+.subckt UMA vdd vss p_i c_i c_not_i p_not_i q_i s_i q_not_i s_not_i r_i r_not_i a_i a_not_i
+*.PININFO p_not_i:B q_i:B r_i:B r_not_i:B q_not_i:B p_i:B a_not_i:B a_i:B s_not_i:B c_not_i:B c_i:B s_i:B vss:B vdd:B
+M1 r_not_i p_not_i net2 vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M2 net2 q_not_i a_i vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M3 r_not_i q_i net1 vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M4 net1 p_i a_i vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M5 a_i q_not_i r_i vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M6 a_i p_not_i r_i vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M7 a_i q_i r_i vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M8 a_i p_i r_i vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M9 r_i p_not_i net4 vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M10 net4 q_not_i a_not_i vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M11 r_i q_i net3 vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M12 net3 p_i a_not_i vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M13 a_not_i q_not_i r_not_i vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M14 a_not_i p_not_i r_not_i vss nfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M15 a_not_i q_i r_not_i vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M16 a_not_i p_i r_not_i vdd pfet_03v3 L=0.28u W=0.42u nf=1 m=1
+M17 p_not_i a_i c_i vss nfet_03v3 L=0.55u W=1.37u nf=1 m=1
+M18 p_not_i a_not_i c_i vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M19 c_i a_not_i p_i vss nfet_03v3 L=0.55u W=1.415u nf=1 m=1
+M20 c_i a_i p_i vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M21 p_i a_i c_not_i vss nfet_03v3 L=0.55u W=1.365u nf=1 m=1
+M22 p_i a_not_i c_not_i vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M23 c_not_i a_not_i p_not_i vss nfet_03v3 L=0.55u W=1.385u nf=1 m=1
+M24 c_not_i a_i p_not_i vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M25 q_not_i c_i s_i vss nfet_03v3 L=0.55u W=1.37u nf=1 m=1
+M26 q_not_i c_not_i s_i vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M27 s_i c_not_i q_i vss nfet_03v3 L=0.55u W=1.415u nf=1 m=1
+M28 s_i c_i q_i vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M29 q_i c_i s_not_i vss nfet_03v3 L=0.55u W=1.365u nf=1 m=1
+M30 q_i c_not_i s_not_i vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+M31 s_not_i c_not_i q_not_i vss nfet_03v3 L=0.55u W=1.385u nf=1 m=1
+M32 s_not_i c_i q_not_i vdd pfet_03v3 L=0.5u W=1.235u nf=1 m=1
+.ends
+
