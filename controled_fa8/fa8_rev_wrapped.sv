@@ -1,0 +1,111 @@
+`default_nettype none
+
+// (* keep_hierarchy = "yes" *)
+module fa8_rev_wrapped (
+    `ifdef USE_POWER_PINS
+    inout wire VDD,
+    inout wire VSS,
+    `endif
+
+    // Input ports
+    inout  wire [7:0] a,
+    inout  wire [7:0] a_not,
+    inout  wire [7:0] b,
+    inout  wire [7:0] b_not,
+    inout  wire       c0_f,
+    inout  wire       c0_f_not,
+    inout  wire       c7,
+    inout  wire       c7_not,
+
+    // Output ports
+    inout wire [7:0] s,
+    inout wire [7:0] s_not,
+    inout wire [7:0] a_b,
+    inout wire [7:0] a_not_b,
+    inout wire       z,
+    inout wire       z_not,
+    inout wire       c0_b,
+    inout wire       c0_not_b
+);
+
+    (* keep *)
+    fa8b_rev u_fa8b_rev (
+        .z           (z),
+        .z_not       (z_not),
+        .c0_b        (c0_b),
+        .c0_not_b    (c0_not_b),
+        .c7_not      (c7_not),
+        .c7          (c7),
+        .s5_not      (s_not[5]),
+        .s5          (s[5]),
+        .s0_not      (s_not[0]),
+        .s0          (s[0]),
+        .s6_not      (s_not[6]),
+        .s6          (s[6]),
+        .s1_not      (s_not[1]),
+        .s1          (s[1]),
+        .s7_not      (s_not[7]),
+        .s7          (s[7]),
+        .s2_not      (s_not[2]),
+        .s2          (s[2]),
+    .s3_not      (s_not[3]),
+    .s3          (s[3]),
+    .s4_not      (s_not[4]),
+    .s4          (s[4]),
+        .c0_f        (c0_f),
+        .c0_f_not    (c0_f_not),
+        `ifdef USE_POWER_PINS
+        .VSS         (VSS),
+        .VDD         (VDD),
+        `endif
+        .a0_f        (a[0]),
+        .a0_not_f    (a_not[0]),
+        .b0          (b[0]),
+        .b0_not      (b_not[0]),
+        .a1_f        (a[1]),
+        .a1_not_f    (a_not[1]),
+        .b1          (b[1]),
+        .b1_not      (b_not[1]),
+        .a2_f        (a[2]),
+        .a2_not_f    (a_not[2]),
+        .b2          (b[2]),
+        .b2_not      (b_not[2]),
+        .a3_f        (a[3]),
+        .a3_not_f    (a_not[3]),
+        .b3          (b[3]),
+        .b3_not      (b_not[3]),
+        .a4_f        (a[4]),
+        .a4_not_f    (a_not[4]),
+        .b4          (b[4]),
+        .b4_not      (b_not[4]),
+        .a5_f        (a[5]),
+        .a5_not_f    (a_not[5]),
+        .b5          (b[5]),
+        .b5_not      (b_not[5]),
+        .a6_f        (a[6]),
+        .a6_not_f    (a_not[6]),
+        .b6          (b[6]),
+        .b6_not      (b_not[6]),
+        .a7_f        (a[7]),
+        .a7_not_f    (a_not[7]),
+        .b7          (b[7]),
+        .b7_not      (b_not[7]),
+        .a0_b        (a_b[0]),
+        .a0_not_b    (a_not_b[0]),
+        .a1_b        (a_b[1]),
+        .a1_not_b    (a_not_b[1]),
+        .a2_b        (a_b[2]),
+        .a2_not_b    (a_not_b[2]),
+        .a3_b        (a_b[3]),
+        .a3_not_b    (a_not_b[3]),
+        .a4_b        (a_b[4]),
+        .a4_not_b    (a_not_b[4]),
+        .a5_b        (a_b[5]),
+        .a5_not_b    (a_not_b[5]),
+        .a6_b        (a_b[6]),
+        .a6_not_b    (a_not_b[6]),
+        .a7_b        (a_b[7]),
+        .a7_not_b    (a_not_b[7])
+    );
+
+endmodule
