@@ -6,141 +6,150 @@ MACRO CCNOT
   CLASS BLOCK ;
   FOREIGN CCNOT ;
   ORIGIN 0.000 0.000 ;
-  SIZE 39.830 BY 23.075 ;
-  PIN a
-    ANTENNAGATEAREA 0.470400 ;
-    PORT
-      LAYER Metal1 ;
-        RECT 6.450 16.920 12.005 17.205 ;
-    END
-  END a
-  PIN c_not
-    ANTENNADIFFAREA 1.587600 ;
-    PORT
-      LAYER Metal1 ;
-        RECT 6.450 12.385 8.295 12.760 ;
-    END
-  END c_not
+  SIZE 30.650 BY 16.070 ;
   PIN VDD
     USE POWER ;
     PORT
-      LAYER Metal1 ;
-        RECT 20.070 18.190 24.390 19.090 ;
+      LAYER Metal3 ;
+        RECT 0.030 15.055 16.565 15.960 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 16.845 15.055 30.380 15.960 ;
     END
   END VDD
   PIN VSS
     USE GROUND ;
     PORT
-      LAYER Metal1 ;
-        RECT 12.955 3.165 33.105 4.065 ;
+      LAYER Metal3 ;
+        RECT 0.045 0.045 14.825 0.950 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 15.105 0.045 30.360 0.950 ;
     END
   END VSS
-  PIN c
-    ANTENNADIFFAREA 1.587600 ;
-    PORT
-      LAYER Metal1 ;
-        RECT 6.450 11.030 18.795 11.420 ;
-    END
-  END c
-  PIN b
+  PIN p_not
     ANTENNAGATEAREA 0.470400 ;
     PORT
-      LAYER Metal1 ;
-        RECT 7.135 10.350 7.145 10.360 ;
+      LAYER Metal3 ;
+        RECT 28.810 1.425 29.540 2.000 ;
     END
-  END b
-  PIN b_not
+  END p_not
+  PIN q
     ANTENNAGATEAREA 0.470400 ;
     PORT
-      LAYER Metal1 ;
-        RECT 6.450 9.415 11.970 9.685 ;
+      LAYER Metal3 ;
+        RECT 29.455 7.095 30.185 7.670 ;
     END
-  END b_not
-  PIN a_not
+  END q
+  PIN q_not
     ANTENNAGATEAREA 0.470400 ;
     PORT
-      LAYER Metal1 ;
-        RECT 6.450 4.660 10.255 5.010 ;
+      LAYER Metal3 ;
+        RECT 29.860 6.140 30.590 6.715 ;
     END
-  END a_not
+  END q_not
   PIN r_not
     ANTENNADIFFAREA 1.587600 ;
     PORT
-      LAYER Metal1 ;
-        RECT 11.280 11.795 33.105 12.135 ;
+      LAYER Metal3 ;
+        RECT 29.450 8.550 30.180 9.125 ;
     END
   END r_not
   PIN r
     ANTENNADIFFAREA 1.587600 ;
     PORT
-      LAYER Metal1 ;
-        RECT 30.065 8.850 33.105 9.185 ;
+      LAYER Metal3 ;
+        RECT 28.560 5.115 29.395 5.690 ;
     END
   END r
   PIN p
     ANTENNAGATEAREA 0.470400 ;
     PORT
-      LAYER Metal1 ;
-        RECT 29.055 16.920 33.105 17.205 ;
+      LAYER Metal3 ;
+        RECT 29.480 13.645 30.210 14.220 ;
     END
   END p
-  PIN p_not
+  PIN a_not
     ANTENNAGATEAREA 0.470400 ;
     PORT
-      LAYER Metal1 ;
-        RECT 30.760 4.660 33.105 5.010 ;
+      LAYER Metal3 ;
+        RECT 0.620 1.400 1.285 1.975 ;
     END
-  END p_not
-  PIN q_not
+  END a_not
+  PIN c
+    ANTENNADIFFAREA 1.587600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.440 7.885 1.105 8.340 ;
+    END
+  END c
+  PIN c_not
+    ANTENNADIFFAREA 1.587600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.450 9.165 1.115 9.740 ;
+    END
+  END c_not
+  PIN a
     ANTENNAGATEAREA 0.470400 ;
     PORT
-      LAYER Metal1 ;
-        RECT 29.060 9.415 33.105 9.685 ;
+      LAYER Metal3 ;
+        RECT 0.540 13.695 1.205 14.175 ;
     END
-  END q_not
-  PIN q
+  END a
+  PIN b
     ANTENNAGATEAREA 0.470400 ;
     PORT
-      LAYER Metal1 ;
-        RECT 31.420 10.355 33.105 10.665 ;
+      LAYER Metal3 ;
+        RECT 0.430 7.170 1.095 7.575 ;
     END
-  END q
+  END b
+  PIN b_not
+    ANTENNAGATEAREA 0.470400 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.500 6.200 1.165 6.625 ;
+    END
+  END b_not
   OBS
       LAYER Nwell ;
-        RECT 6.450 10.865 33.105 19.090 ;
+        RECT 6.450 16.070 33.105 19.090 ;
+        RECT 3.850 10.865 33.105 16.070 ;
+        RECT 3.850 10.125 27.810 10.865 ;
       LAYER Pwell ;
-        RECT 6.450 3.165 33.105 10.865 ;
+        RECT 27.810 10.125 33.105 10.865 ;
+      LAYER Nwell ;
+        RECT 3.850 3.165 6.450 10.125 ;
+      LAYER Pwell ;
+        RECT 6.450 3.165 33.105 10.125 ;
       LAYER Metal1 ;
-        RECT 6.450 17.890 19.770 19.090 ;
-        RECT 24.690 17.890 33.105 19.090 ;
-        RECT 6.450 17.505 33.105 17.890 ;
-        RECT 12.305 16.620 28.755 17.505 ;
-        RECT 6.450 13.060 33.105 16.620 ;
-        RECT 8.595 12.435 33.105 13.060 ;
-        RECT 8.595 12.085 10.980 12.435 ;
-        RECT 6.450 11.720 10.980 12.085 ;
-        RECT 19.095 10.965 33.105 11.495 ;
-        RECT 19.095 10.730 31.120 10.965 ;
-        RECT 6.450 10.665 31.120 10.730 ;
-        RECT 6.450 10.645 31.420 10.665 ;
-        RECT 6.450 10.375 31.120 10.645 ;
-        RECT 6.450 10.360 31.420 10.375 ;
-        RECT 6.450 10.355 7.135 10.360 ;
-        RECT 6.450 10.050 6.835 10.355 ;
-        RECT 7.445 10.055 31.120 10.360 ;
-        RECT 7.445 10.050 33.105 10.055 ;
-        RECT 6.450 9.985 33.105 10.050 ;
-        RECT 12.270 9.115 28.760 9.985 ;
-        RECT 6.450 8.550 29.765 9.115 ;
-        RECT 6.450 5.310 33.105 8.550 ;
-        RECT 10.555 4.365 30.460 5.310 ;
-        RECT 10.555 4.360 12.655 4.365 ;
-        RECT 6.450 4.065 12.655 4.360 ;
-        RECT 6.450 4.015 12.955 4.065 ;
-        RECT 6.450 3.755 12.695 4.015 ;
-        RECT 6.450 3.165 12.955 3.755 ;
+        RECT 1.745 0.040 29.580 15.965 ;
       LAYER Metal2 ;
-        RECT 8.250 3.630 32.605 18.875 ;
+        RECT 0.885 0.085 30.095 15.910 ;
+      LAYER Metal3 ;
+        RECT 1.095 14.520 29.860 14.755 ;
+        RECT 1.095 14.475 29.180 14.520 ;
+        RECT 1.505 13.395 29.180 14.475 ;
+        RECT 1.095 13.345 29.180 13.395 ;
+        RECT 1.095 10.040 29.860 13.345 ;
+        RECT 1.415 9.425 29.860 10.040 ;
+        RECT 1.415 8.865 29.150 9.425 ;
+        RECT 1.095 8.640 29.150 8.865 ;
+        RECT 1.405 8.250 29.150 8.640 ;
+        RECT 1.405 7.970 29.860 8.250 ;
+        RECT 1.405 7.585 29.155 7.970 ;
+        RECT 1.395 6.925 29.155 7.585 ;
+        RECT 1.465 6.795 29.155 6.925 ;
+        RECT 1.465 5.990 29.560 6.795 ;
+        RECT 1.465 5.900 28.260 5.990 ;
+        RECT 1.095 4.815 28.260 5.900 ;
+        RECT 29.695 4.815 29.860 5.840 ;
+        RECT 1.095 2.300 29.860 4.815 ;
+        RECT 1.095 2.275 28.510 2.300 ;
+        RECT 1.585 1.250 28.510 2.275 ;
+        RECT 29.840 1.250 29.860 2.300 ;
   END
 END CCNOT
 END LIBRARY

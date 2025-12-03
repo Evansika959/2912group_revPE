@@ -1,0 +1,34 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 03/12/2025 07:32
+
+.SUBCKT CCNOT VSS a_not|p_not a|p c_not r_not r c b_not|q_not b|q
+M$1 r_not b|q c_not \$27 pfet_03v3 L=0.28U W=0.42U AS=0.273P AD=0.273P PS=2.14U
++ PD=2.14U
+M$2 \$25 b_not|q_not r_not \$24 pfet_03v3 L=0.28U W=0.12U AS=0.273P AD=0.273P
++ PS=2.14U PD=2.14U
+M$3 c a_not|p_not \$25 \$24 pfet_03v3 L=0.28U W=0.12U AS=0.273P AD=0.273P
++ PS=2.14U PD=2.14U
+M$4 \$26 a_not|p_not c_not \$24 pfet_03v3 L=0.28U W=0.12U AS=0.273P AD=0.273P
++ PS=2.14U PD=2.14U
+M$5 r b_not|q_not \$26 \$24 pfet_03v3 L=0.28U W=0.12U AS=0.273P AD=0.273P
++ PS=2.14U PD=2.14U
+M$6 c b|q r \$24 pfet_03v3 L=0.28U W=0.12U AS=0.273P AD=0.273P PS=2.14U PD=2.14U
+M$7 r_not a|p c_not \$38 pfet_03v3 L=0.28U W=0.42U AS=0.273P AD=0.273P PS=2.14U
++ PD=2.14U
+M$8 c a|p r \$24 pfet_03v3 L=0.28U W=0.42U AS=0.273P AD=0.273P PS=2.14U PD=2.14U
+M$9 r_not a_not|p_not c_not VSS nfet_03v3 L=0.28U W=0.42U AS=0.2562P AD=0.2562P
++ PS=2.06U PD=2.06U
+M$10 c a_not|p_not r VSS nfet_03v3 L=0.28U W=0.42U AS=0.2562P AD=0.2562P
++ PS=2.06U PD=2.06U
+M$11 r_not b_not|q_not c_not VSS nfet_03v3 L=0.28U W=0.42U AS=0.2562P
++ AD=0.2562P PS=2.06U PD=2.06U
+M$12 \$10 a|p r_not VSS nfet_03v3 L=0.28U W=0.42U AS=0.2562P AD=0.2562P
++ PS=2.06U PD=2.06U
+M$13 c b|q \$10 VSS nfet_03v3 L=0.28U W=0.42U AS=0.2562P AD=0.2562P PS=2.06U
++ PD=2.06U
+M$14 \$11 b|q c_not VSS nfet_03v3 L=0.28U W=0.42U AS=0.2562P AD=0.2562P
++ PS=2.06U PD=2.06U
+M$15 r a|p \$11 VSS nfet_03v3 L=0.28U W=0.42U AS=0.2562P AD=0.2562P PS=2.06U
++ PD=2.06U
+M$16 c b_not|q_not r VSS nfet_03v3 L=0.28U W=0.42U AS=0.2562P AD=0.2562P
++ PS=2.06U PD=2.06U
+.ENDS CCNOT
