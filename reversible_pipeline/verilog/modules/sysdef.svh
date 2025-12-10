@@ -1,0 +1,8 @@
+`define DATA_NUM 8
+`define DATA_WIDTH 16
+`define ACT_WIDTH 8
+`define WEIGHT_WIDTH 8
+
+`define CMD_WIDTH 2
+`define SPI_DATA_WIDTH (`DATA_WIDTH + `CMD_WIDTH)
+`define SPI_ADDR_WIDTH 4
