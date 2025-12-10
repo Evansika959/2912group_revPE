@@ -5,4 +5,4 @@
 
 `define CMD_WIDTH 2
 `define SPI_DATA_WIDTH (`DATA_WIDTH + `CMD_WIDTH)
-`define SPI_ADDR_WIDTH 4
+`define SPI_ADDR_WIDTH 2

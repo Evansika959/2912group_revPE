@@ -12,8 +12,8 @@ module reversible_pe (
     output logic                          spi_miso
 
     // err flag
-    // output logic                          err1,
-    // output logic                          err2
+    output logic                          err1,
+    output logic                          err2
 );
 
 localparam IDLE = 2'b01;
@@ -26,6 +26,8 @@ localparam WRITE_CMD  = 2'b00;
 // State register
 logic [1:0] current_state, next_state;
 logic [$clog2(`DATA_NUM)-1:0] counter, nxt_counter;
+logic [$clog2(`DATA_NUM)-1:0] wr_counter;
+
 
 // SPI signals
 logic [`DATA_WIDTH+`CMD_WIDTH-1:0]        spi_rdata;
@@ -38,10 +40,19 @@ logic [$clog2(`DATA_NUM*2)-1:0] spi_addr;
 // Buffer signals
 logic [`DATA_WIDTH-1:0]         buffer_data_in;
 logic                          buffer_wen;
-logic [$clog2(`DATA_NUM*2)-1:0] buffer_waddr;
+logic [$clog2(`DATA_NUM)-1:0] buffer_waddr;
 logic                          buffer_ren;
-logic [$clog2(`DATA_NUM*2)-1:0] buffer_raddr;
+logic [$clog2(`DATA_NUM)-1:0] buffer_raddr;
 logic [`DATA_WIDTH-1:0]         buffer_data_out;
+
+logic [`DATA_WIDTH-1:0]         out_buffer_data_in;
+logic                          out_buffer_wen;
+logic [$clog2(`DATA_NUM)-1:0] out_buffer_waddr;
+logic                          out_buffer_ren;
+logic [$clog2(`DATA_NUM)-1:0] out_buffer_raddr;
+logic [`DATA_WIDTH-1:0]         out_buffer_data_out;
+
+logic                         nxt_err1, nxt_err2;
 
 logic [`CMD_WIDTH-1:0]         cmd, nxt_cmd;
 
@@ -53,6 +64,7 @@ logic [15:0] output_reg, nxt_output_reg;
 logic [`DATA_WIDTH-1:0]        pe_reg0, nxt_pe_reg0;
 logic [23:0]        pe_reg1, nxt_pe_reg1;
 logic [31:0]        pe_reg2, nxt_pe_reg2;
+logic               pe_vld0, pe_vld1, pe_vld2;
 
 logic [15:0] mult_rev_ab;
 
@@ -64,16 +76,22 @@ logic        unused_r_c0_f;
 logic        unused_r_z;
 logic [7:0]  unused_mult_r_extra;
 
-
-
 assign nxt_cmd = spi_wdata[`DATA_WIDTH +: `CMD_WIDTH];
 assign buffer_data_in = spi_wdata[`DATA_WIDTH-1:0];
 assign buffer_waddr = spi_addr;
 assign buffer_wen = spi_wen & (nxt_cmd == WRITE_CMD); // decode command with current payload
 
-assign buffer_ren = (spi_ren & (current_state == IDLE)) | (current_state == WORK); // read command
-assign buffer_raddr = (current_state == IDLE) ? spi_addr : counter;
-assign spi_rdata = { {`CMD_WIDTH{1'b0}}, buffer_data_out };
+assign buffer_ren = (current_state == WORK); // read command
+assign buffer_raddr = counter;
+
+
+assign out_buffer_data_in = pe_reg2[15:0];
+assign out_buffer_waddr = counter;
+assign out_buffer_wen = pe_vld3;
+
+assign out_buffer_ren = (spi_ren & (current_state == IDLE));
+assign out_buffer_raddr = spi_addr;
+assign spi_rdata = { {`CMD_WIDTH{1'b0}}, out_buffer_data_out };
 
 assign nxt_pe_reg0 = buffer_data_out;
 
@@ -81,6 +99,9 @@ always_comb begin
     // Default assignments
     next_state = current_state;
     nxt_counter = counter;
+
+    nxt_err1 = err1;
+    nxt_err2 = err2;
  
     case (current_state)
         IDLE: begin
@@ -97,6 +118,9 @@ always_comb begin
             end else begin
                 nxt_counter = counter + 1;
             end
+
+            nxt_err1 = (pe_reg0 != mult_rev_ab && pe_vld0) ? 1'b1 : 1'b0;
+            nxt_err2 = (pe_reg1 != add_rev_ab[15:0] && pe_vld1) ? 1'b1 : 1'b0;
         end
 
         default: begin
@@ -106,19 +130,30 @@ always_comb begin
 
 end
 
-// always_comb begin
-//     // Default assignments
-//     nxt_pe_reg0 = pe_reg0;
-//     nxt_pe_reg1 = pe_reg1;
-//     nxt_pe_reg2 = pe_reg2;
+//for the err flags
+always_ff @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        err1 <= 1'b0;
+        err2 <= 1'b0;
+    end else begin
+        err1 <= nxt_err1;
+        err2 <= nxt_err2;
+    end
+end
 
-//     if (current_state == WORK) begin
-//         // Simple example operation: increment each register by 1
-//         nxt_pe_reg0 = buffer_data_out;
-//         nxt_pe_reg1 = mult_f_out;
-//         nxt_pe_reg2 = pe_reg2 + 1;
-//     end
-// end
+always_ff @(posedge clk or negedge rst_n) begin
+    if (!rst_n) begin
+        pe_vld0 <= 1'b0;
+        pe_vld1 <= 1'b0;
+        pe_vld2 <= 1'b0;
+        wr_counter <= '0;
+    end else begin
+        pe_vld0 <= (current_state == WORK);
+        pe_vld1 <= pe_vld0;
+        pe_vld2 <= pe_vld1;
+        wr_counter <= (pe_vld2) ? wr_counter + 1 : wr_counter;
+    end
+end
 
 always_ff @(posedge clk or negedge rst_n) begin
     if (!rst_n) begin
@@ -192,7 +227,7 @@ mult8_rev u_mult8_rev (
 
 spi_slave #(
     .DW (`SPI_DATA_WIDTH),
-    .AW (6),
+    .AW (`SPI_ADDR_WIDTH+2),
     .CNT (6)
 ) u_spi_slave (
     .clk(clk),
@@ -215,8 +250,8 @@ spi_slave #(
 pe_buffer #(
     .DATA_NUM(`DATA_NUM),
     .DATA_WIDTH(`DATA_WIDTH),
-    .DEPTH(`DATA_NUM*2),
-    .ADDR_WIDTH($clog2(`DATA_NUM*2))
+    .DEPTH(`DATA_NUM),
+    .ADDR_WIDTH($clog2(`DATA_NUM))
 ) u_pe_buffer (
     .clk(clk),
     .rst_n(rst_n),
@@ -227,6 +262,23 @@ pe_buffer #(
     .read_en(buffer_ren),
     .read_addr(buffer_raddr),
     .data_out(buffer_data_out) // connect to PE inputs
+);
+
+pe_buffer #(
+    .DATA_NUM(`DATA_NUM),
+    .DATA_WIDTH(`DATA_WIDTH),
+    .DEPTH(`DATA_NUM),
+    .ADDR_WIDTH($clog2(`DATA_NUM))
+) u_pe_out_buffer (
+    .clk(clk),
+    .rst_n(rst_n),
+    .data_in(out_buffer_data_in),
+    .write_en(out_buffer_wen),
+    .write_addr(out_buffer_waddr),
+
+    .read_en(out_buffer_ren),
+    .read_addr(out_buffer_raddr),
+    .data_out(out_buffer_data_out) // connect to PE inputs
 );
 
 endmodule

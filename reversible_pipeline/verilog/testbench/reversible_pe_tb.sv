@@ -76,7 +76,7 @@ module reversible_pe_tb;
     );
         @(negedge fpga_clk);
         spi_start = 1;
-        spi_tx_data = {2'b01, addr, 1'b0, 8'b0};
+        spi_tx_data = {2'b01, addr, 1'b0, 16'b0};
         @(negedge fpga_clk);
         spi_start = 0;
         while (1)begin
@@ -119,7 +119,7 @@ module reversible_pe_tb;
 	initial begin
         $dumpfile(`VCD_FILE);
         $dumpvars(0, reversible_pe_tb);
-        
+
 		rst_n = 1'b0;
         rst_master = 1'b1;
         spi_start = 0;
@@ -127,6 +127,14 @@ module reversible_pe_tb;
 		#200;
 		rst_n = 1'b1;
         rst_master = 1'b0;
+
+        #500;
+        //write test data via SPI
+        FPGA_SPI_WR(0, 18'h00001);
+
+        #500;
+        FPGA_SPI_WR(0, 18'h20001);
+
 
         #10000;
 		$finish;
