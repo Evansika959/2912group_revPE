@@ -1,0 +1,95 @@
+DESIGN_NAME: fa8_rev_ctrl
+
+VERILOG_FILES:
+  - dir::fa8_rev_control.sv
+  - dir::fa8_rev_wrapped.sv
+CLOCK_PORT: clk
+CLOCK_PERIOD: 25
+
+VDD_NETS:
+  - VDD
+GND_NETS:
+  - VSS
+
+PRIMARY_GDSII_STREAMOUT_TOOL: klayout
+
+PDN_MACRO_CONNECTIONS: 
+- "* VDD VSS VDD VSS"
+VERILOG_POWER_DEFINE: USE_POWER_PINS
+# ERROR_ON_PDN_VIOLATIONS: false
+
+# PDN_VERTICAL_LAYERS: Metal4
+# PDN_HORIZONTAL_LAYERS: Metal5
+
+# IGNORE_DISCONNECTED_MODULES: 
+# - u_fa16b_rev
+
+PNR_SDC_FILE: dir::constraints.sdc
+
+STD_CELL_LIBRARY: gf180mcu_fd_sc_mcu7t5v0
+TECH_LEFS: 
+    "nom_*": "pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/techlef/gf180mcu_fd_sc_mcu7t5v0__nom.tlef"
+
+# PDK / stdcell library–specific settings
+pdk::gf180mcuD:
+  scl::gf180mcu_fd_sc_mcu7t5v0:
+
+    # Use only this timing corner
+    DEFAULT_CORNER: nom_tt_025C_3v30
+    STA_CORNERS: [nom_tt_025C_3v30]
+
+    # Point that corner to a specific .lib
+    LIB:
+      nom_tt_025C_3v30:
+        - "pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib"
+
+# Pin Order
+FP_PIN_ORDER_CFG: dir::pin_order.cfg
+
+MACROS:
+  fa8b_rev:
+    gds:
+      - dir::../custom_ip/fa8b_rev/fa8b_rev.gds
+    lef:
+      - dir::../custom_ip/fa8b_rev/fa8b_rev.lef
+    vh:
+      - dir::../custom_ip/fa8b_rev/fa8b_rev.vh
+    lib:
+      "*_tt_025C_3v30":
+        - dir::../custom_ip/fa8b_rev/fa8b_rev.lib
+    instances:
+      fa1:
+        location: [60, 60]
+        orientation: N
+      fa2:
+        location: [60, 120]
+        orientation: N
+      fa3:
+        location: [75, 120]
+        orientation: N
+      fa4:
+        location: [75, 120]
+        orientation: N
+      fa5:
+        location: [75, 180]
+        orientation: N
+
+# Pin metal layer
+FP_IO_HLAYER: "Metal3"
+FP_IO_VLAYER: "Metal2"
+FP_IO_HEXTEND: 0
+FP_IO_VEXTEND: 0
+
+# Area
+FP_SIZING: absolute
+DIE_AREA: [0, 0, 1820, 2220]
+CORE_AREA: [20, 20, 1800, 2200]
+
+DRT_OPT_ITERS: 20
+
+PDN_HPITCH: 45
+
+PDN_CFG: dir::pdn_cfg.tcl
+
+GRT_ANTENNA_ITERS: 10
+GRT_ANTENNA_MARGIN: 10

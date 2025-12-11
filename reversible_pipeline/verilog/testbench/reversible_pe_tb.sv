@@ -76,7 +76,7 @@ module reversible_pe_tb;
     );
         @(negedge fpga_clk);
         spi_start = 1;
-        spi_tx_data = {2'b01, addr, 1'b0, 16'b0};
+        spi_tx_data = {2'b01, addr, 1'b0, 18'b0};
         @(negedge fpga_clk);
         spi_start = 0;
         while (1)begin
@@ -115,6 +115,8 @@ module reversible_pe_tb;
     initial fpga_clk = 0;
     always #100 fpga_clk = ~fpga_clk;
 
+    logic [15:0] rd_val;
+
 	// Basic stimulus: hold SPI idle and release reset after some time
 	initial begin
         $dumpfile(`VCD_FILE);
@@ -130,11 +132,39 @@ module reversible_pe_tb;
 
         #500;
         //write test data via SPI
-        FPGA_SPI_WR(0, 18'h00001);
+        FPGA_SPI_WR(0, 18'h10101);
 
         #500;
+        //write test data via SPI
+        FPGA_SPI_WR(1, 18'h10102);
+        #500;
+        //write test data via SPI
+        FPGA_SPI_WR(2, 18'h10103);
+        #500;
+        //write test data via SPI
+        FPGA_SPI_WR(3, 18'h10104);
+
+        #500;
+        //write test data via SPI
+        FPGA_SPI_WR(4, 18'h10105);
+        #500;
+        //write test data via SPI
+        FPGA_SPI_WR(5, 18'h10106);
+        #500;
+        //write test data via SPI
+        FPGA_SPI_WR(6, 18'h10107);
+        #500;
+        //write test data via SPI
+        FPGA_SPI_WR(7, 18'h10108);
+
+        #1000;
         FPGA_SPI_WR(0, 18'h20001);
 
+        #10000;
+        for (int i = 0; i < 8; i++) begin
+            FPGA_SPI_RD(i, rd_val);
+            $display("Read data from addr %0d: %h", i, rd_val);
+        end;
 
         #10000;
 		$finish;

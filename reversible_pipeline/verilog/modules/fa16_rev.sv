@@ -65,13 +65,13 @@ module fa16_rev (
         backward_accum = {1'b0, r_s} - {1'b0, r_a_b} - {16'b0, r_c15};
 
         if (dir == 1'b1) begin
-            r_a    = backward_sum;
-            r_b    = r_a_b;
+            r_b    = backward_sum;
+            r_a    = r_a_b;
             r_c0_f = r_c0_b;
             r_z    = r_c15;
         end else begin
-            r_a    = '0;
             r_b    = '0;
+            r_a    = '0;
             r_c0_f = 1'b0;
             r_z    = 1'b0;
         end
