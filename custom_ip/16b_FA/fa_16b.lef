@@ -8,6 +8,7 @@ MACRO fa_16b
   ORIGIN 0.000 0.000 ;
   SIZE 169.925 BY 349.940 ;
   PIN vss
+    USE GROUND ;
     ANTENNADIFFAREA 36.745197 ;
     PORT
       LAYER Metal3 ;
@@ -147,6 +148,7 @@ MACRO fa_16b
     END
   END vss
   PIN vdd
+    USE POWER ;
     ANTENNADIFFAREA 59.785198 ;
     PORT
       LAYER Metal3 ;

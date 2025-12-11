@@ -1,4 +1,4 @@
-`include "16b_FA.vh"
+// `include "fa_16b.vh"
 
 // This takes in fa16_rev_wrapped, and achieves bidirectional control under signal 'dir'
 /*
@@ -183,11 +183,11 @@ module fa16_rev_wrapped (
     inout wire        z,
     inout wire        z_not,
     inout wire        c0_b,
-    inout wire        c0_not_b,
+    inout wire        c0_not_b
 );
 
     (* keep *)
-    FA_16  u_fa16b_rev (
+    fa_16b  u_fa16b_rev (
         .z           (z),
         .z_not       (z_not),
         .c0_b        (c0_b),
