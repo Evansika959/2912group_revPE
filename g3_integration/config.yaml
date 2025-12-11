@@ -27,7 +27,7 @@ GND_NETS:
 PRIMARY_GDSII_STREAMOUT_TOOL: klayout
 
 PDN_MACRO_CONNECTIONS: 
-- "u_fa16_rev.u_rev.u_fa16b_rev vdd vss VDD VSS"
+- "u_fa16_rev.u_rev.u_fa16b_rev VDD VSS VDD VSS"
 # "VERILOG_POWER_DEFINE": USE_POWER_PINS
 # ERROR_ON_PDN_VIOLATIONS: false
 
@@ -72,7 +72,7 @@ MACROS:
         - dir::../custom_ip/fa16b_rev/fa16b_rev.lib
     instances:
       u_fa16_rev.u_rev.u_fa16b_rev:
-        location: [200, 200]
+        location: [1300, 200]
         orientation: N
 
 # Pin metal layer
@@ -86,6 +86,6 @@ FP_SIZING: absolute
 DIE_AREA: [0, 0, 2020, 1020]
 CORE_AREA: [20, 20, 2000, 1000]
 
-DRT_OPT_ITERS: 10
+DRT_OPT_ITERS: 50
 
 PDN_CFG: dir::pdn_cfg.tcl

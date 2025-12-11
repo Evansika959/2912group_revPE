@@ -189,8 +189,8 @@ module fa16_rev_wrapped (
     (* keep *)
     fa_16b  u_fa16b_rev (
         `ifdef USE_POWER_PINS
-        .vss         (VSS),
-        .vdd         (VDD),
+        .VSS         (VSS),
+        .VDD         (VDD),
         `endif
         .z           (z),
         .z_not       (z_not),
