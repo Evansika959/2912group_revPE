@@ -18,7 +18,7 @@ module reversible_pe (
 
 localparam IDLE = 2'b01;
 localparam WORK = 2'b10;
-localparam READOUT = 2'b11;
+// localparam READOUT = 2'b11;
 
 localparam START_CMD = 2'b10;
 localparam WRITE_CMD  = 2'b01;

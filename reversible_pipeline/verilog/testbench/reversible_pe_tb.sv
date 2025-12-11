@@ -158,7 +158,7 @@ module reversible_pe_tb;
         FPGA_SPI_WR(7, 18'h10108);
 
         #1000;
-        FPGA_SPI_WR(0, 18'h20001);
+        FPGA_SPI_WR(0, 18'h20000);
 
         #10000;
         for (int i = 0; i < 8; i++) begin
