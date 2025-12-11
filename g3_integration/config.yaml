@@ -1,0 +1,88 @@
+DESIGN_NAME: reversible_pe
+
+VERILOG_FILES:
+  - file::../reversible_pipeline/verilog/modules/reversible_pe.sv
+  - file::../reversible_pipeline/verilog/modules/mult8_rev.sv
+  - file::../reversible_pipeline/verilog/modules/pe_buffer.sv
+  - file::../reversible_pipeline/verilog/modules/spi_slave.sv
+  - file::../custom_ip/16b_FA/16b_FA.vh
+  - file::../reversible_pipeline/verilog/custom_blocks/fa16_rev.sv
+
+VERILOG_INCLUDE_DIRS:
+  - dir::../reversible_pipeline/verilog/custom_blocks
+  - dir::../custom_ip/16b_FA
+  - dir::../reversible_pipeline/verilog/modules
+
+CLOCK_PORT: clk
+CLOCK_PERIOD: 60
+
+VDD_NETS:
+  - VDD
+GND_NETS:
+  - VSS
+
+PRIMARY_GDSII_STREAMOUT_TOOL: klayout
+
+PDN_MACRO_CONNECTIONS: 
+- "u_fa16b_rev VDD VSS VDD VSS"
+# "VERILOG_POWER_DEFINE": USE_POWER_PINS
+# ERROR_ON_PDN_VIOLATIONS: false
+
+# PDN_VERTICAL_LAYERS: Metal4
+# PDN_HORIZONTAL_LAYERS: Metal5
+
+IGNORE_DISCONNECTED_MODULES: 
+- u_fa16b_rev
+
+PNR_SDC_FILE: dir::constraints.sdc
+
+STD_CELL_LIBRARY: gf180mcu_fd_sc_mcu7t5v0
+TECH_LEFS: 
+    "nom_*": "pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/techlef/gf180mcu_fd_sc_mcu7t5v0__nom.tlef"
+
+# PDK / stdcell library–specific settings
+pdk::gf180mcuD:
+  scl::gf180mcu_fd_sc_mcu7t5v0:
+
+    # Use only this timing corner
+    DEFAULT_CORNER: nom_tt_025C_3v30
+    STA_CORNERS: [nom_tt_025C_3v30]
+
+    # Point that corner to a specific .lib
+    LIB:
+      nom_tt_025C_3v30:
+        - "pdk_dir::libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib"
+
+# Pin Order
+FP_PIN_ORDER_CFG: dir::pin_order.cfg
+
+MACROS:
+  fa16b_rev:
+    gds:
+      - dir::../custom_ip/fa16b_rev/fa16b_rev.gds
+    lef:
+      - dir::../custom_ip/fa16b_rev/fa16b_rev.lef
+    vh:
+      - dir::../custom_ip/fa16b_rev/fa16b_rev.vh
+    lib:
+      "*_tt_025C_3v30":
+        - dir::../custom_ip/fa16b_rev/fa16b_rev.lib
+    instances:
+      u_fa16b_rev:
+        location: [125, 70]
+        orientation: N
+
+# Pin metal layer
+FP_IO_HLAYER: "Metal3"
+FP_IO_VLAYER: "Metal2"
+FP_IO_HEXTEND: 0
+FP_IO_VEXTEND: 0
+
+# Area
+FP_SIZING: absolute
+DIE_AREA: [0, 0, 2020, 1020]
+CORE_AREA: [20, 20, 2000, 1000]
+
+DRT_OPT_ITERS: 10
+
+PDN_CFG: dir::pdn_cfg.tcl

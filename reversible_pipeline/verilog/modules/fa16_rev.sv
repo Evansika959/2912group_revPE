@@ -1,7 +1,7 @@
 module fa16_rev (
 `ifdef USE_POWER_PINS
-    inout logic VDD,
-    inout logic VSS,
+    inout logic vdd,
+    inout logic vss,
 `endif
     input  logic        dir,      // 0: forward  (A,B,C0_f,Z -> S,a_b,C0_b,C15)
                                  // 1: backward (S,a_b,C0_b,C15 -> A,B,C0_f,Z)
