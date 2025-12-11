@@ -1,6 +1,12 @@
 `include "sysdef.svh"
 
 module reversible_pe (
+    `ifdef USE_POWER_PINS
+        inout logic VDD,
+        inout logic VSS,
+    `endif
+
+    // global signals
     input  logic                          clk,
     input  logic                          clk_b,
     input  logic                          rst_n,
@@ -70,8 +76,9 @@ logic [23:0]        pe_reg1, nxt_pe_reg1;
 logic [31:0]        pe_reg2, nxt_pe_reg2;
 logic               pe_vld_stem, pe_vld0, pe_vld1, pe_vld2;
 
-logic [7:0] mult_f_a, mult_f_b, mult_f_a_b;
+logic [7:0]  mult_f_a, mult_f_b, mult_f_a_b;
 logic [15:0] mult_f_p;
+
 
 logic [15:0] mult_rev_ab;
 
@@ -82,7 +89,6 @@ logic        unused_f_c0_b;
 logic        unused_f_c15;
 logic        unused_r_c0_f;
 logic        unused_r_z;
-logic [7:0]  unused_mult_r_extra;
 
 assign nxt_cmd = spi_wen ? spi_wdata[`DATA_WIDTH +: `CMD_WIDTH] : NO_CMD;
 assign buffer_data_in = spi_wdata[`DATA_WIDTH-1:0];
@@ -247,14 +253,26 @@ mult8_rev u_mult8_rev (
     .dir     (mult_dir), // forward on clk, backward on clk_b
     .f_a     (mult_f_a),
     .f_b     (mult_f_b),
-    .f_extra (8'b0),
     .f_p     (mult_f_p),
-    .f_a_b   (mult_f_a_b),
+    .f_b0_r_b(mult_f_a_b),
+    .f_b2_r_b(),
+    .f_b3_r_b(),
+    .f_b4_r_b(),
+    .f_b5_r_b(),
+    .f_b6_r_b(),
+    .f_b7_r_b(),
+    .f_x_c0_b(),
     .r_p     (pe_reg1[15:0]),
-    .r_a_b   (pe_reg1[23:16]),
+    .r_b0_r_b(pe_reg1[23:16]),
+    .r_b2_r_b(8'b0),
+    .r_b3_r_b(8'b0),
+    .r_b4_r_b(8'b0),
+    .r_b5_r_b(8'b0),
+    .r_b6_r_b(8'b0),
+    .r_b7_r_b(8'b0),
+    .r_x_c0_b(7'b0),
     .r_a     (mult_rev_ab[7:0]),
-    .r_b     (mult_rev_ab[15:8]),
-    .r_extra (unused_mult_r_extra)
+    .r_b     (mult_rev_ab[15:8])
 );
 
 spi_slave #(

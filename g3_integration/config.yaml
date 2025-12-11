@@ -8,6 +8,9 @@ VERILOG_FILES:
   - dir::../custom_ip/16b_FA/16b_FA.vh
   - dir::../reversible_pipeline/verilog/custom_blocks/fa16_rev.sv
 
+VERILOG_DEFINES:
+  - USE_POWER_PINS
+
 # VERILOG_INCLUDE_DIRS:
 #   - dir::../reversible_pipeline/verilog/custom_blocks
 #   - dir::../custom_ip/16b_FA

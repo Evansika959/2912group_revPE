@@ -197,7 +197,7 @@ add_pdn_connect \
 
 define_pdn_grid \
     -macro \
-    -instances u_fa16b_rev \
+    -instances u_fa16_rev.u_rev.u_fa16b_rev \
     -name fa_pg \
     -starts_with POWER \
     -halo "$::env(PDN_HORIZONTAL_HALO) $::env(PDN_VERTICAL_HALO)"
