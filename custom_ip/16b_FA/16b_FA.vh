@@ -1,7 +1,7 @@
 (* blackbox *)
-module 16b_FA (
-    inout wire VSS,
-    inout wire VDD,
+module \16b_FA (
+    inout wire vss,
+    inout wire vdd,
     inout wire z,
     inout wire z_not,
     inout wire c0_b,

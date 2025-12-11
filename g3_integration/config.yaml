@@ -1,12 +1,12 @@
 DESIGN_NAME: reversible_pe
 
 VERILOG_FILES:
-  - file::../reversible_pipeline/verilog/modules/reversible_pe.sv
-  - file::../reversible_pipeline/verilog/modules/mult8_rev.sv
-  - file::../reversible_pipeline/verilog/modules/pe_buffer.sv
-  - file::../reversible_pipeline/verilog/modules/spi_slave.sv
-  - file::../custom_ip/16b_FA/16b_FA.vh
-  - file::../reversible_pipeline/verilog/custom_blocks/fa16_rev.sv
+  - dir::../reversible_pipeline/verilog/modules/reversible_pe.sv
+  - dir::../reversible_pipeline/verilog/modules/mult8_rev.sv
+  - dir::../reversible_pipeline/verilog/modules/pe_buffer.sv
+  - dir::../reversible_pipeline/verilog/modules/spi_slave.sv
+  - dir::../custom_ip/16b_FA/16b_FA.vh
+  - dir::../reversible_pipeline/verilog/custom_blocks/fa16_rev.sv
 
 VERILOG_INCLUDE_DIRS:
   - dir::../reversible_pipeline/verilog/custom_blocks
@@ -24,7 +24,7 @@ GND_NETS:
 PRIMARY_GDSII_STREAMOUT_TOOL: klayout
 
 PDN_MACRO_CONNECTIONS: 
-- "u_fa16b_rev VDD VSS VDD VSS"
+- "u_fa16_rev.u_rev.u_fa16b_rev vdd vss VDD VSS"
 # "VERILOG_POWER_DEFINE": USE_POWER_PINS
 # ERROR_ON_PDN_VIOLATIONS: false
 
@@ -32,7 +32,7 @@ PDN_MACRO_CONNECTIONS:
 # PDN_HORIZONTAL_LAYERS: Metal5
 
 IGNORE_DISCONNECTED_MODULES: 
-- u_fa16b_rev
+- reversible_pe
 
 PNR_SDC_FILE: dir::constraints.sdc
 
@@ -57,19 +57,19 @@ pdk::gf180mcuD:
 FP_PIN_ORDER_CFG: dir::pin_order.cfg
 
 MACROS:
-  fa16b_rev:
+  16b_FA:
     gds:
-      - dir::../custom_ip/fa16b_rev/fa16b_rev.gds
+      - dir::../custom_ip/16b_FA/16b_FA.gds
     lef:
-      - dir::../custom_ip/fa16b_rev/fa16b_rev.lef
+      - dir::../custom_ip/16b_FA/16b_FA.lef
     vh:
-      - dir::../custom_ip/fa16b_rev/fa16b_rev.vh
+      - dir::../custom_ip/16b_FA/16b_FA.vh
     lib:
       "*_tt_025C_3v30":
         - dir::../custom_ip/fa16b_rev/fa16b_rev.lib
     instances:
-      u_fa16b_rev:
-        location: [125, 70]
+      u_fa16_rev.u_rev.u_fa16b_rev:
+        location: [200, 200]
         orientation: N
 
 # Pin metal layer

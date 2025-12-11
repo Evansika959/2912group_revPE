@@ -187,7 +187,7 @@ module fa16_rev_wrapped (
 );
 
     (* keep *)
-    \16b_FA  u_fa16b_rev (
+    FA_16  u_fa16b_rev (
         .z           (z),
         .z_not       (z_not),
         .c0_b        (c0_b),
@@ -229,8 +229,8 @@ module fa16_rev_wrapped (
         .c0_f        (c0_f),
         .c0_f_not    (c0_f_not),
         `ifdef USE_POWER_PINS
-        .VSS         (VSS),
-        .VDD         (VDD),
+        .vss         (VSS),
+        .vdd         (VDD),
         `endif
         .a0_f        (a[0]),
         .a0_not_f    (a_not[0]),
