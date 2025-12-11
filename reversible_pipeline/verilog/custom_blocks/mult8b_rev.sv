@@ -85,8 +85,8 @@ module mult8b_rev (
     // ============================================================
     mult8b_rev_wrapped u_rev (
     `ifdef USE_POWER_PINS
-        .VDD     (vdd),
-        .VSS     (vss),
+        .VDD     (VDD),
+        .VSS     (VSS),
     `endif
         .a        (pin_a),
         .a_not    (pin_a_not),

@@ -225,6 +225,10 @@ assign add_f_a = pe_reg1[15:0];
 assign add_f_b = output_reg;
 
 fa16_rev u_fa16_rev (
+    `ifdef USE_POWER_PINS
+        .VDD     (VDD),
+        .VSS     (VSS),
+    `endif
     .dir     (fa_dir), // forward on clk, backward on clk_b
     .f_a     (add_f_a),
     .f_b     (add_f_b),
