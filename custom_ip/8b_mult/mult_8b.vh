@@ -1,6 +1,6 @@
 module mult_8b (
-    inout wire vss,
-    inout wire vdd,
+    inout wire VSS,
+    inout wire VDD,
     inout wire a0_not,
     inout wire a0,
     inout wire a1_not,

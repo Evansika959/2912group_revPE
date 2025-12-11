@@ -916,6 +916,980 @@ MACRO mult_8b
         RECT 188.645 19.495 194.625 19.765 ;
     END
   END x0_b0_f_not
+  PIN VDD
+    USE POWER ;
+    PORT
+      LAYER Metal3 ;
+        RECT 1040.680 185.145 1164.650 186.035 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1040.680 165.450 1164.650 166.320 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1040.680 145.680 1164.650 146.635 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1040.680 125.925 1164.650 126.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1164.930 185.145 1236.650 186.035 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1164.930 165.450 1236.650 166.320 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1164.930 145.680 1236.650 146.635 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1164.930 125.925 1236.650 126.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1236.930 185.145 1360.850 186.035 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1236.930 165.450 1360.850 166.320 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1236.930 145.680 1360.850 146.635 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1236.930 125.925 1360.850 126.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1361.130 185.145 1433.350 186.035 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1361.130 165.450 1433.350 166.320 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1361.130 145.680 1433.350 146.635 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1361.130 125.925 1433.350 126.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 647.830 185.145 771.300 186.035 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 647.830 165.450 771.300 166.320 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 647.830 145.680 771.300 146.635 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 647.830 125.925 771.300 126.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 771.580 185.145 843.900 186.035 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 771.580 165.450 843.900 166.320 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 771.580 145.680 843.900 146.635 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 771.580 125.925 843.900 126.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 844.180 185.145 967.900 186.035 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 844.180 165.450 967.900 166.320 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 844.180 145.680 967.900 146.635 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 844.180 125.925 967.900 126.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 968.180 185.145 1040.400 186.035 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 968.180 165.450 1040.400 166.320 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 968.180 145.680 1040.400 146.635 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 968.180 125.925 1040.400 126.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 647.830 46.850 771.300 47.770 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 647.830 106.175 771.300 107.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 844.180 106.175 967.900 107.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 844.180 86.475 967.900 87.395 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 844.180 66.500 967.900 67.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 844.180 46.850 967.900 47.770 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 647.830 86.475 771.300 87.395 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 647.830 66.500 771.300 67.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 771.580 106.175 843.900 107.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 771.580 86.475 843.900 87.395 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 771.580 66.500 843.900 67.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 771.580 46.850 843.900 47.770 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 968.180 106.175 1040.400 107.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 968.180 86.475 1040.400 87.395 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 968.180 66.500 1040.400 67.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 968.180 46.850 1040.400 47.770 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1040.680 46.850 1164.650 47.770 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1040.680 106.175 1164.650 107.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1236.930 106.175 1360.850 107.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1236.930 86.475 1360.850 87.395 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1236.930 66.500 1360.850 67.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1236.930 46.850 1360.850 47.770 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1040.680 86.475 1164.650 87.395 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1040.680 66.500 1164.650 67.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1164.930 106.175 1236.650 107.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1164.930 86.475 1236.650 87.395 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1164.930 66.500 1236.650 67.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1164.930 46.850 1236.650 47.770 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1361.130 106.175 1433.350 107.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1361.130 86.475 1433.350 87.395 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1361.130 66.500 1433.350 67.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1361.130 46.850 1433.350 47.770 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 379.230 185.145 451.200 186.035 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 379.230 165.450 451.200 166.320 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 379.230 145.680 428.915 146.635 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 379.230 125.925 451.200 126.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 451.480 185.145 574.950 186.035 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 451.480 165.450 574.950 166.320 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 451.480 145.680 574.950 146.635 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 451.480 125.925 574.950 126.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 575.230 185.145 647.550 186.035 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 575.230 165.450 647.550 166.320 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 575.230 145.680 647.550 146.635 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 575.230 125.925 647.550 126.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 113.530 185.145 182.250 186.035 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 113.530 165.450 182.250 166.320 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 113.530 145.680 182.250 146.635 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 113.530 125.925 182.250 126.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 182.530 185.145 254.700 186.035 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 182.530 165.450 254.700 166.320 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 182.530 145.680 232.535 146.635 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 182.530 125.925 254.700 126.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 254.980 185.145 378.950 186.035 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 254.980 165.450 378.950 166.320 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 254.980 145.680 378.950 146.635 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 254.980 125.925 378.950 126.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 33.080 204.870 113.220 205.725 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 33.030 185.145 113.250 186.035 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 33.030 165.450 113.250 166.320 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 33.030 145.680 113.250 146.635 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 33.030 125.925 113.250 126.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 182.530 106.175 254.700 107.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 182.530 86.475 254.700 87.395 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 182.530 66.500 254.700 67.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 182.530 46.850 254.700 47.770 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 113.530 106.175 182.250 107.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 254.980 106.175 378.950 107.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 254.980 86.475 378.950 87.395 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 254.980 66.500 378.950 67.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 254.980 46.850 378.950 47.770 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 113.530 86.475 182.250 87.395 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 113.530 66.500 182.250 67.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 113.530 46.850 182.250 47.770 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 33.030 106.175 113.250 107.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 33.030 86.475 113.250 87.395 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 33.030 66.500 113.250 67.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 33.030 46.850 113.250 47.770 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 575.230 106.175 647.550 107.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 575.230 86.475 647.550 87.395 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 575.230 66.500 647.550 67.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 575.230 46.850 647.550 47.770 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 379.230 86.475 451.200 87.395 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 379.230 66.500 451.200 67.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 451.480 106.175 574.950 107.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 451.480 86.475 574.950 87.395 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 451.480 66.500 574.950 67.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 451.480 46.850 574.950 47.770 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 379.230 46.850 451.200 47.770 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 379.230 106.175 451.200 107.095 ;
+    END
+  END VDD
+  PIN VSS
+    USE GROUND ;
+    PORT
+      LAYER Metal3 ;
+        RECT 1043.130 170.025 1167.100 171.010 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1043.130 150.225 1167.100 151.295 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1043.130 130.675 1167.100 131.595 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1167.380 170.025 1239.100 171.010 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1167.380 150.225 1239.100 151.295 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1167.380 130.675 1239.100 131.595 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1239.380 170.025 1363.350 171.010 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1239.380 150.225 1363.350 151.295 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1239.380 130.675 1363.350 131.595 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1363.630 170.025 1435.850 171.010 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1363.630 150.225 1435.850 151.295 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1363.630 130.675 1435.850 131.595 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 650.330 170.025 773.950 171.010 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 650.330 150.225 773.950 151.295 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 650.330 130.675 773.950 131.595 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 774.230 170.025 846.450 171.010 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 774.230 150.225 846.450 151.295 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 774.230 130.675 846.450 131.595 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 846.730 170.025 970.450 171.010 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 846.730 150.225 970.450 151.295 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 846.730 130.675 970.450 131.595 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 970.730 170.025 1042.850 171.010 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 970.730 150.225 1042.850 151.295 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 970.730 130.675 1042.850 131.595 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 650.330 91.175 773.950 92.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 650.330 71.450 773.950 72.370 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 774.230 110.925 846.450 111.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 970.730 110.925 1042.850 111.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 970.730 91.175 1042.850 92.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 970.730 71.450 1042.850 72.370 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 970.730 51.500 1042.850 52.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 970.730 31.800 1042.850 32.720 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 774.230 91.175 846.450 92.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 774.230 71.450 846.450 72.370 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 774.230 51.500 846.450 52.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 774.230 31.800 846.450 32.720 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 650.330 51.500 773.950 52.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 650.330 31.800 773.950 32.720 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 846.730 110.925 970.450 111.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 846.730 91.175 970.450 92.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 846.730 71.450 970.450 72.370 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 846.730 51.500 970.450 52.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 846.730 31.800 970.450 32.720 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 650.330 110.925 773.950 111.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1167.380 91.175 1239.100 92.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1167.380 71.450 1239.100 72.370 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1167.380 51.500 1239.100 52.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1167.380 31.800 1239.100 32.720 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1043.130 51.500 1167.100 52.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1043.130 31.800 1167.100 32.720 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1239.380 110.925 1363.350 111.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1239.380 91.175 1363.350 92.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1239.380 71.450 1363.350 72.370 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1239.380 51.500 1363.350 52.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1239.380 31.800 1363.350 32.720 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1043.130 110.925 1167.100 111.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1043.130 91.175 1167.100 92.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1043.130 71.450 1167.100 72.370 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1167.380 110.925 1239.100 111.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1363.630 110.925 1435.850 111.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1363.630 91.175 1435.850 92.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1363.630 71.450 1435.850 72.370 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1363.630 51.500 1435.850 52.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 1363.630 31.800 1435.850 32.720 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 381.830 170.025 453.800 171.010 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 381.830 150.225 453.800 151.295 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 381.830 130.675 453.800 131.595 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 454.080 170.025 577.550 171.010 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 454.080 150.225 577.550 151.295 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 454.080 130.675 577.550 131.595 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 577.830 170.025 650.050 171.010 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 577.830 150.225 650.050 151.295 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 577.830 130.675 650.050 131.595 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 115.930 170.025 184.750 171.010 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 115.930 150.225 184.750 151.295 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 115.930 130.675 184.750 131.595 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 185.030 170.025 257.250 171.010 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 185.030 150.225 257.250 151.295 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 185.030 130.675 257.250 131.595 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 257.530 170.025 381.550 171.010 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 257.530 150.225 381.550 151.295 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 257.530 130.675 381.550 131.595 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 34.425 189.810 115.720 190.675 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 34.430 170.025 115.650 171.010 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 34.430 150.225 115.650 151.295 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 34.430 130.675 115.650 131.595 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 34.430 51.500 115.650 52.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 115.930 110.925 184.750 111.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 185.030 110.925 257.250 111.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 185.030 91.175 257.250 92.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 185.030 71.450 257.250 72.370 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 185.030 51.500 257.250 52.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 185.030 31.800 257.250 32.720 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 115.930 91.175 184.750 92.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 115.930 71.450 184.750 72.370 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 115.930 51.500 184.750 52.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 115.930 31.800 184.750 32.720 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 257.530 110.925 381.550 111.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 257.530 91.175 381.550 92.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 257.530 71.450 381.550 72.370 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 257.530 51.500 381.550 52.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 257.530 31.800 381.550 32.720 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 34.430 71.450 115.650 72.370 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 34.430 110.925 115.650 111.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 34.430 91.175 115.650 92.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 577.830 110.925 650.050 111.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 577.830 91.175 650.050 92.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 577.830 71.450 650.050 72.370 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 577.830 51.500 650.050 52.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 577.830 31.800 650.050 32.720 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 381.830 110.925 453.800 111.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 381.830 91.175 453.800 92.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 381.830 71.450 453.800 72.370 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 454.080 110.925 577.550 111.845 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 454.080 91.175 577.550 92.095 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 454.080 71.450 577.550 72.370 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 454.080 51.500 577.550 52.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 454.080 31.800 577.550 32.720 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 381.830 51.500 453.800 52.420 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 381.830 31.800 453.800 32.720 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 34.430 31.800 115.650 32.720 ;
+    END
+  END VSS
   PIN p15
     ANTENNADIFFAREA 2.734275 ;
     PORT
@@ -930,76 +1904,6 @@ MACRO mult_8b
         RECT 1382.450 19.705 1385.490 19.990 ;
     END
   END p15_not
-  PIN vss
-    ANTENNADIFFAREA 149.846390 ;
-    PORT
-      LAYER Metal3 ;
-        RECT 34.430 31.800 115.650 32.720 ;
-    END
-    PORT
-      LAYER Metal3 ;
-        RECT 34.430 51.500 115.650 52.420 ;
-    END
-    PORT
-      LAYER Metal3 ;
-        RECT 34.430 71.450 115.650 72.370 ;
-    END
-    PORT
-      LAYER Metal3 ;
-        RECT 34.430 91.175 115.650 92.095 ;
-    END
-    PORT
-      LAYER Metal3 ;
-        RECT 34.430 110.925 115.650 111.845 ;
-    END
-    PORT
-      LAYER Metal3 ;
-        RECT 34.430 130.675 115.650 131.595 ;
-    END
-    PORT
-      LAYER Metal3 ;
-        RECT 34.430 150.225 115.650 151.295 ;
-    END
-    PORT
-      LAYER Metal3 ;
-        RECT 34.430 170.025 115.650 171.010 ;
-    END
-  END vss
-  PIN vdd
-    ANTENNADIFFAREA 276.566406 ;
-    PORT
-      LAYER Metal3 ;
-        RECT 33.030 46.850 113.250 47.770 ;
-    END
-    PORT
-      LAYER Metal3 ;
-        RECT 33.030 66.500 113.250 67.420 ;
-    END
-    PORT
-      LAYER Metal3 ;
-        RECT 33.030 86.475 113.250 87.395 ;
-    END
-    PORT
-      LAYER Metal3 ;
-        RECT 33.030 106.175 113.250 107.095 ;
-    END
-    PORT
-      LAYER Metal3 ;
-        RECT 33.030 125.925 113.250 126.845 ;
-    END
-    PORT
-      LAYER Metal3 ;
-        RECT 33.030 145.680 113.250 146.635 ;
-    END
-    PORT
-      LAYER Metal3 ;
-        RECT 33.030 165.450 113.250 166.320 ;
-    END
-    PORT
-      LAYER Metal3 ;
-        RECT 33.030 185.145 113.250 186.035 ;
-    END
-  END vdd
   PIN b7_c1
     ANTENNADIFFAREA 1.587600 ;
     PORT
@@ -4741,54 +5645,61 @@ MACRO mult_8b
         RECT 1286.180 15.440 1287.815 33.745 ;
         RECT 1290.030 15.440 1436.255 78.875 ;
       LAYER Metal3 ;
-        RECT 31.890 186.335 1438.175 205.755 ;
+        RECT 31.890 204.570 32.780 205.755 ;
+        RECT 113.520 204.570 1438.175 205.755 ;
+        RECT 31.890 190.975 1438.175 204.570 ;
+        RECT 31.890 189.510 34.125 190.975 ;
+        RECT 116.020 189.510 1438.175 190.975 ;
+        RECT 31.890 186.335 1438.175 189.510 ;
         RECT 31.890 184.845 32.730 186.335 ;
-        RECT 113.550 184.845 1438.175 186.335 ;
+        RECT 1433.650 184.845 1438.175 186.335 ;
         RECT 31.890 171.310 1438.175 184.845 ;
         RECT 31.890 169.725 34.130 171.310 ;
-        RECT 115.950 169.725 1438.175 171.310 ;
+        RECT 1436.150 169.725 1438.175 171.310 ;
         RECT 31.890 166.620 1438.175 169.725 ;
         RECT 31.890 165.150 32.730 166.620 ;
-        RECT 113.550 165.150 1438.175 166.620 ;
+        RECT 1433.650 165.150 1438.175 166.620 ;
         RECT 31.890 151.595 1438.175 165.150 ;
         RECT 31.890 149.925 34.130 151.595 ;
-        RECT 115.950 149.925 1438.175 151.595 ;
+        RECT 1436.150 149.925 1438.175 151.595 ;
         RECT 31.890 146.935 1438.175 149.925 ;
         RECT 31.890 145.380 32.730 146.935 ;
-        RECT 113.550 145.380 1438.175 146.935 ;
+        RECT 232.835 145.380 254.680 146.935 ;
+        RECT 429.215 145.380 451.180 146.935 ;
+        RECT 1433.650 145.380 1438.175 146.935 ;
         RECT 31.890 131.895 1438.175 145.380 ;
         RECT 31.890 130.375 34.130 131.895 ;
-        RECT 115.950 130.375 1438.175 131.895 ;
+        RECT 1436.150 130.375 1438.175 131.895 ;
         RECT 31.890 127.145 1438.175 130.375 ;
         RECT 31.890 125.625 32.730 127.145 ;
-        RECT 113.550 125.625 1438.175 127.145 ;
+        RECT 1433.650 125.625 1438.175 127.145 ;
         RECT 31.890 112.145 1438.175 125.625 ;
         RECT 31.890 110.625 34.130 112.145 ;
-        RECT 115.950 110.625 1438.175 112.145 ;
+        RECT 1436.150 110.625 1438.175 112.145 ;
         RECT 31.890 107.395 1438.175 110.625 ;
         RECT 31.890 105.875 32.730 107.395 ;
-        RECT 113.550 105.875 1438.175 107.395 ;
+        RECT 1433.650 105.875 1438.175 107.395 ;
         RECT 31.890 92.395 1438.175 105.875 ;
         RECT 31.890 90.875 34.130 92.395 ;
-        RECT 115.950 90.875 1438.175 92.395 ;
+        RECT 1436.150 90.875 1438.175 92.395 ;
         RECT 31.890 87.695 1438.175 90.875 ;
         RECT 31.890 86.175 32.730 87.695 ;
-        RECT 113.550 86.175 1438.175 87.695 ;
+        RECT 1433.650 86.175 1438.175 87.695 ;
         RECT 31.890 72.670 1438.175 86.175 ;
         RECT 31.890 71.150 34.130 72.670 ;
-        RECT 115.950 71.150 1438.175 72.670 ;
+        RECT 1436.150 71.150 1438.175 72.670 ;
         RECT 31.890 67.720 1438.175 71.150 ;
         RECT 31.890 66.200 32.730 67.720 ;
-        RECT 113.550 66.200 1438.175 67.720 ;
+        RECT 1433.650 66.200 1438.175 67.720 ;
         RECT 31.890 52.720 1438.175 66.200 ;
         RECT 31.890 51.200 34.130 52.720 ;
-        RECT 115.950 51.200 1438.175 52.720 ;
+        RECT 1436.150 51.200 1438.175 52.720 ;
         RECT 31.890 48.070 1438.175 51.200 ;
         RECT 31.890 46.550 32.730 48.070 ;
-        RECT 113.550 46.550 1438.175 48.070 ;
+        RECT 1433.650 46.550 1438.175 48.070 ;
         RECT 31.890 33.020 1438.175 46.550 ;
         RECT 31.890 31.500 34.130 33.020 ;
-        RECT 115.950 31.500 1438.175 33.020 ;
+        RECT 1436.150 31.500 1438.175 33.020 ;
         RECT 31.890 20.290 1438.175 31.500 ;
         RECT 31.890 19.405 1382.150 20.290 ;
         RECT 1385.790 19.405 1438.175 20.290 ;
